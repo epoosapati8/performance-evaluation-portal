@@ -1,0 +1,3947 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Performance Evaluation Portal",
+    "description": "Performance Evaluation Portal",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "localhost:8000",
+  "basePath": "/",
+  "tags": [],
+  "schemes": [],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/api/v1/users/": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "Add a User",
+            "schema": {
+              "$ref": "#/definitions/AddUser"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "User successfully created.",
+            "schema": {
+              "$ref": "#/definitions/PostUserResponse"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "All users successfully obtained.",
+            "schema": {
+              "$ref": "#/definitions/UserGetAllResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/users/{userId}": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User successfully obtained.",
+            "schema": {
+              "$ref": "#/definitions/UserGetResponse"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Users"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User successfully updated.",
+            "schema": {
+              "$ref": "#/definitions/UserUpdateResponse"
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Users"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "User successfully deleted.",
+            "schema": {
+              "$ref": "#/definitions/UserDeleteResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/users/auth": {
+      "post": {
+        "tags": [
+          "Authentication"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "Enter Credentials",
+            "schema": {
+              "$ref": "#/definitions/Credentials"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User successfully Authenticated.",
+            "schema": {
+              "$ref": "#/definitions/AuthenticationResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/users/gauth": {
+      "post": {
+        "tags": [
+          "Authentication"
+        ],
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "User successfully Authenticated.",
+            "schema": {
+              "$ref": "#/definitions/AuthenticationResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/users/token": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "New Token Obtained.",
+            "schema": {
+              "$ref": "#/definitions/AccessTokenResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/users/change-password": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Password successfully changed.",
+            "schema": {
+              "$ref": "#/definitions/ChangePasswordResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/employees/": {
+      "post": {
+        "tags": [
+          "Employees"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "Add an employee",
+            "schema": {
+              "$ref": "#/definitions/AddEmployee"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Employee created successfully.",
+            "schema": {
+              "$ref": "#/definitions/EmployeePostResponse"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Employees"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Employees successfully obtained.",
+            "schema": {
+              "$ref": "#/definitions/EmployeeAllResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/employees/{userId}": {
+      "get": {
+        "tags": [
+          "Employees"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Employee successfully obtained.",
+            "schema": {
+              "$ref": "#/definitions/EmployeeUserResponse"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Employees"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Employee Updated Successfully",
+            "schema": {
+              "$ref": "#/definitions/EmployeeUpdateResponse"
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Employees"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Employee Deleted Successfully.",
+            "schema": {
+              "$ref": "#/definitions/EmployeeDeleteResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/employees/profile/{empId}": {
+      "get": {
+        "tags": [
+          "Employees"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "empId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Employee successfully obtained.",
+            "schema": {
+              "$ref": "#/definitions/EmployeeUserResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/employees/year/{empId}": {
+      "get": {
+        "tags": [
+          "Employees"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "empId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Year Of Joining of Employee obtained.",
+            "schema": {
+              "$ref": "#/definitions/EmployeeYOJResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/scoreSheetAnswers/": {
+      "post": {
+        "tags": [
+          "ScoreSheetAnswers"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          },
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "Add ScoreSheetAnswers",
+            "schema": {
+              "$ref": "#/definitions/AddScoreSheetAns"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Score sheet answers successfully created.",
+            "schema": {
+              "$ref": "#/definitions/ScoreSheetAnswer"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/scoreSheetAnswers/{empId}/{year}/{quarter}": {
+      "get": {
+        "tags": [
+          "ScoreSheetAnswers"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "empId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "quarter",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Score sheet answers successfully obtained using empid.",
+            "schema": {
+              "$ref": "#/definitions/ScoreSheetGetByIdResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/scoreSheetAnswers/average/{year}/{quarter}/{projectName}": {
+      "get": {
+        "tags": [
+          "ScoreSheetAnswers"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "quarter",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "projectName",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Average of all scores of a project successfully obtained.",
+            "schema": {
+              "$ref": "#/definitions/ScoreSheetAnsAverageResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/scoreSheetAnswers/{empId}/{year}/{quarter}/{projectName}": {
+      "get": {
+        "tags": [
+          "ScoreSheetAnswers"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "empId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "quarter",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "projectName",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Score sheet answers successfully obtained using project name.",
+            "schema": {
+              "$ref": "#/definitions/ScoreSheetAnsByProject"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/scoreSheetAnswers/{id}": {
+      "put": {
+        "tags": [
+          "ScoreSheetAnswers"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Score sheet answers successfully updated.",
+            "schema": {
+              "$ref": "#/definitions/ScoreSheetAnswerUpdateResponse"
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ScoreSheetAnswers"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Score sheet answers successfully deleted.",
+            "schema": {
+              "$ref": "#/definitions/ScoreSheetAnswerDeleteResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/perfEvalAnswers/project/{empId}/{year}/{quarter}": {
+      "get": {
+        "tags": [
+          "SelfAssessmentAnswers"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "empId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "quarter",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Saved Projects successfully obtained.",
+            "schema": {
+              "$ref": "#/definitions/PerfEvalAnsAllResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/perfEvalAnswers/": {
+      "post": {
+        "tags": [
+          "SelfAssessmentAnswers"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          },
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "Add SelfAssessmentAnswers",
+            "schema": {
+              "$ref": "#/definitions/Addperfevalans"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Performance Evaluation Answers successfully created.",
+            "schema": {
+              "$ref": "#/definitions/PerfEvalAnsPostResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/perfEvalAnswers/{empId}/{year}/{quarter}": {
+      "get": {
+        "tags": [
+          "SelfAssessmentAnswers"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "empId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "quarter",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Performance Evaluation Answers successfully obtained using empId .",
+            "schema": {
+              "$ref": "#/definitions/PerfEvalGetResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/perfEvalAnswers/{empId}/{year}/{quarter}/{projectName}": {
+      "get": {
+        "tags": [
+          "SelfAssessmentAnswers"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "empId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "quarter",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "projectName",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Performance Evaluation Answers successfully obtained using project name.",
+            "schema": {
+              "$ref": "#/definitions/PerfEvalAnsGetAllResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/perfEvalAnswers/{id}": {
+      "put": {
+        "tags": [
+          "SelfAssessmentAnswers"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Performance Evaluation Answers successfully updated.",
+            "schema": {
+              "$ref": "#/definitions/PerfEvalAnsUpdateResponse"
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SelfAssessmentAnswers"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Performance Evaluation Answers successfully deleted.",
+            "schema": {
+              "$ref": "#/definitions/PerfEvalAnswerDeleteResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/scoreSheetQues/": {
+      "post": {
+        "tags": [
+          "ScoreSheetQuestions"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          },
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "Add ScoreSheetQuestions",
+            "schema": {
+              "$ref": "#/definitions/AddScoreSheetQues"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Score sheet questions successfully created.",
+            "schema": {
+              "$ref": "#/definitions/ScoreSheetQuestion"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/scoreSheetQues/{year}/{quarter}": {
+      "get": {
+        "tags": [
+          "ScoreSheetQuestions"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "quarter",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Score sheet questions successfully obtained.",
+            "schema": {
+              "$ref": "#/definitions/ScoreSheetQuestionGetResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/scoreSheetQues/{id}": {
+      "put": {
+        "tags": [
+          "ScoreSheetQuestions"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Score sheet questions successfully updated.",
+            "schema": {
+              "$ref": "#/definitions/ScoreSheetUpdateQuestion"
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ScoreSheetQuestions"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Score sheet questions successfully deleted.",
+            "schema": {
+              "$ref": "#/definitions/ScoreSheetQuesDeleteResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/scoreSheetQues/status/{year}/{quarter}": {
+      "get": {
+        "tags": [
+          "ScoreSheetQuestions"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "quarter",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Status of Score sheet questions obtained.",
+            "schema": {
+              "$ref": "#/definitions/ScoreSheetQuestionStatusResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/selfEvalQues/": {
+      "post": {
+        "tags": [
+          "SelfAssessmentQuestions"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          },
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "Add SelfAssessmentQuestions",
+            "schema": {
+              "$ref": "#/definitions/Addselfevalques"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Self evaluation questions successfully created.",
+            "schema": {
+              "$ref": "#/definitions/SelfEvalPostResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/selfEvalQues/{year}/{quarter}": {
+      "get": {
+        "tags": [
+          "SelfAssessmentQuestions"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "quarter",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Self evaluation questions successfully obtained using year and quarter.",
+            "schema": {
+              "$ref": "#/definitions/SelfEvalGetQuestionResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/selfEvalQues/{id}": {
+      "put": {
+        "tags": [
+          "SelfAssessmentQuestions"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Self evaluation questions successfully Updated.",
+            "schema": {
+              "$ref": "#/definitions/SelfEvalQuestionUpdatedResponse"
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SelfAssessmentQuestions"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Self evaluation questions successfully deleted.",
+            "schema": {
+              "$ref": "#/definitions/SelfEvalQuesDeleteResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/selfEvalQues/status/{year}/{quarter}": {
+      "get": {
+        "tags": [
+          "SelfAssessmentQuestions"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "quarter",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Status of self evaluation questions obtained.",
+            "schema": {
+              "$ref": "#/definitions/SelfEvalStatusResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/projects/": {
+      "post": {
+        "tags": [
+          "Projects"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          },
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "Add Projects",
+            "schema": {
+              "$ref": "#/definitions/Addproject"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Project created successfully.",
+            "schema": {
+              "$ref": "#/definitions/ProjectResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/projects/{year}/{quarter}/{managerId}": {
+      "get": {
+        "tags": [
+          "Projects"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "quarter",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "managerId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Project list of manager successfully obtained using quarter.",
+            "schema": {
+              "$ref": "#/definitions/ProjectManagerResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/projects/hr/{year}/{quarter}/{hrId}": {
+      "get": {
+        "tags": [
+          "Projects"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "quarter",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "hrId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Project list of hr successfully obtained.",
+            "schema": {
+              "$ref": "#/definitions/ProjectHrResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/projects/{year}/{quarter}": {
+      "get": {
+        "tags": [
+          "Projects"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "quarter",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Project list successfully obtained.",
+            "schema": {
+              "$ref": "#/definitions/ProjectGetResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/projects/{id}": {
+      "put": {
+        "tags": [
+          "Projects"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Project successfully Updated.",
+            "schema": {
+              "$ref": "#/definitions/projectUpdateResponse"
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Projects"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Project successfully deleted.",
+            "schema": {
+              "$ref": "#/definitions/ProjectDeleteResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/projectsEmp/": {
+      "post": {
+        "tags": [
+          "ProjectsEmployees"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          },
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "Add ProjectsEmployees",
+            "schema": {
+              "$ref": "#/definitions/Addprojectemployee"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Project-Employee mapping successfully created.",
+            "schema": {
+              "$ref": "#/definitions/ProjectEmpResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/projectsEmp/{year}/{quarter}/{projectName}": {
+      "get": {
+        "tags": [
+          "ProjectsEmployees"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "quarter",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "projectName",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Project-Employee mapping successfully obtained using project name.",
+            "schema": {
+              "$ref": "#/definitions/ProjectEmpGetResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/projectsEmp/analysis/{year}/{quarter}/{projectName}": {
+      "get": {
+        "tags": [
+          "ProjectsEmployees"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "quarter",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "projectName",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Total score of all employees in a project successfully obtained.",
+            "schema": {
+              "$ref": "#/definitions/ProjectTotalGetResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/projectsEmp/{id}/{year}/{quarter}": {
+      "get": {
+        "tags": [
+          "ProjectsEmployees"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "quarter",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Project-Employee mapping successfully obtained using projectid.",
+            "schema": {
+              "$ref": "#/definitions/ProjectEmpGetResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/projectsEmp/{id}": {
+      "put": {
+        "tags": [
+          "ProjectsEmployees"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Project-Employee mapping updated .",
+            "schema": {
+              "$ref": "#/definitions/projectEmpUpdateResponse"
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ProjectsEmployees"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": " Project-Employee mapping successfully deleted.",
+            "schema": {
+              "$ref": "#/definitions/ProjectEmpDeleteResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/reportABug/": {
+      "post": {
+        "tags": [
+          "BugReports"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          },
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "Add BugReports ",
+            "schema": {
+              "$ref": "#/definitions/AddBugReport"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Bug report successfully created.",
+            "schema": {
+              "$ref": "#/definitions/ReportABugResponse"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "BugReports"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Bug report successfully obtained.",
+            "schema": {
+              "$ref": "#/definitions/ReportABugGetResponse"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/reportABug/{id}": {
+      "delete": {
+        "tags": [
+          "BugReports"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string",
+            "description": "Bearer <token>"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Bug report successfully deleted.",
+            "schema": {
+              "$ref": "#/definitions/BugReportDeleteResponse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "EmployeePostResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "CREATED"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "isActive": {
+              "type": "boolean",
+              "example": true
+            },
+            "isDeleted": {
+              "type": "boolean",
+              "example": false
+            },
+            "_id": {
+              "type": "string",
+              "example": "60508cec2b3679fb77a9d605"
+            },
+            "name": {
+              "type": "string",
+              "example": "Pawan"
+            },
+            "role": {
+              "type": "string",
+              "example": "employee"
+            },
+            "phoneNumber": {
+              "type": "string",
+              "example": "9076647216"
+            },
+            "yearOfJoining": {
+              "type": "string",
+              "example": "2021"
+            },
+            "empId": {
+              "type": "string",
+              "example": "NL-309"
+            },
+            "designation": {
+              "type": "string",
+              "example": "MTS-3"
+            },
+            "createdAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            },
+            "updatedAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            }
+          }
+        }
+      }
+    },
+    "EmployeeYOJResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "string",
+          "example": "2020"
+        }
+      }
+    },
+    "EmployeeAllResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "isActive": {
+                "type": "boolean",
+                "example": true
+              },
+              "isDeleted": {
+                "type": "boolean",
+                "example": false
+              },
+              "_id": {
+                "type": "string",
+                "example": "60437078a8eaf340e4620092"
+              },
+              "name": {
+                "type": "string",
+                "example": "Vikash Agarwal"
+              },
+              "role": {
+                "type": "string",
+                "example": "employee"
+              },
+              "phoneNumber": {
+                "type": "string",
+                "example": "8908755805"
+              },
+              "yearOfJoining": {
+                "type": "string",
+                "example": "2020"
+              },
+              "empId": {
+                "type": "string",
+                "example": "NL-305"
+              },
+              "designation": {
+                "type": "string",
+                "example": "MTS-3"
+              }
+            }
+          }
+        }
+      }
+    },
+    "EmployeeUserResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "isActive": {
+              "type": "boolean",
+              "example": true
+            },
+            "isDeleted": {
+              "type": "boolean",
+              "example": false
+            },
+            "_id": {
+              "type": "string",
+              "example": "60460b890dd54b13e08e422e"
+            },
+            "name": {
+              "type": "string",
+              "example": "Archana Raparthi"
+            },
+            "role": {
+              "type": "string",
+              "example": "employee"
+            },
+            "phoneNumber": {
+              "type": "string",
+              "example": "8908755715"
+            },
+            "yearOfJoining": {
+              "type": "string",
+              "example": "2020"
+            },
+            "empId": {
+              "type": "string",
+              "example": "NL-310"
+            },
+            "designation": {
+              "type": "string",
+              "example": "manager"
+            }
+          }
+        }
+      }
+    },
+    "EmployeeUpdateResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "isActive": {
+              "type": "boolean",
+              "example": true
+            },
+            "isDeleted": {
+              "type": "boolean",
+              "example": false
+            },
+            "_id": {
+              "type": "string",
+              "example": "604079f94755e41214a6520f"
+            },
+            "name": {
+              "type": "string",
+              "example": "Archana"
+            },
+            "phoneNumber": {
+              "type": "string",
+              "example": "8885285252"
+            },
+            "role": {
+              "type": "string",
+              "example": "employee"
+            },
+            "designation": {
+              "type": "string",
+              "example": "manager"
+            },
+            "yearOfJoining": {
+              "type": "string",
+              "example": "2020"
+            },
+            "empId": {
+              "type": "string",
+              "example": "NL-310"
+            },
+            "createdAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            },
+            "updatedAt": {
+              "type": "string",
+              "example": "2021-03-10T11:34:15.300Z"
+            }
+          }
+        }
+      }
+    },
+    "EmployeeDeleteResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "DELETED"
+        }
+      }
+    },
+    "PostUserResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "CREATED"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "isActive": {
+              "type": "boolean",
+              "example": true
+            },
+            "isDeleted": {
+              "type": "boolean",
+              "example": false
+            },
+            "_id": {
+              "type": "string",
+              "example": "604bb31ff530b4158302e5fe"
+            },
+            "email": {
+              "type": "string",
+              "example": "vikash.agarwal@nineleaps.com"
+            },
+            "details": {
+              "type": "string",
+              "example": "604b6b3e5a5f0d116da6a7d0"
+            },
+            "password": {
+              "type": "string",
+              "example": "$2b$10$GOWnjrGdfl3Ru64tI2b4PuCcZ5kgdgng1.aBe1GKI0wvj5X7uknpa"
+            },
+            "createdAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            },
+            "updatedAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            }
+          }
+        }
+      }
+    },
+    "UserDeleteResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "DELETED"
+        }
+      }
+    },
+    "UserUpdateResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "isActive": {
+              "type": "boolean",
+              "example": true
+            },
+            "isDeleted": {
+              "type": "boolean",
+              "example": false
+            },
+            "_id": {
+              "type": "string",
+              "example": "604079f94755e41214a6520f"
+            },
+            "name": {
+              "type": "string",
+              "example": "Archana"
+            },
+            "email": {
+              "type": "string",
+              "example": "raparthi.archana@nineleaps.com"
+            },
+            "password": {
+              "type": "string",
+              "example": "$2b$10$GOWnjrGdfl3Ru64tI2b4PuCcZ5kgdgng1.aBe1GKI0wvj5X7uknpa"
+            },
+            "createdAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            },
+            "updatedAt": {
+              "type": "string",
+              "example": "2021-03-10T11:34:15.300Z"
+            }
+          }
+        }
+      }
+    },
+    "UserGetResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "isActive": {
+              "type": "boolean",
+              "example": true
+            },
+            "isDeleted": {
+              "type": "boolean",
+              "example": false
+            },
+            "_id": {
+              "type": "string",
+              "example": "60473c7edc95a52a58f1447e"
+            },
+            "email": {
+              "type": "string",
+              "example": "poosapati.raju@nineleaps.com"
+            },
+            "details": {
+              "type": "object",
+              "properties": {
+                "isActive": {
+                  "type": "boolean",
+                  "example": true
+                },
+                "isDeleted": {
+                  "type": "boolean",
+                  "example": false
+                },
+                "_id": {
+                  "type": "string",
+                  "example": "60473b90dc95a52a58f1447b"
+                },
+                "name": {
+                  "type": "string",
+                  "example": "Raju"
+                },
+                "role": {
+                  "type": "string",
+                  "example": "employee"
+                },
+                "phoneNumber": {
+                  "type": "string",
+                  "example": "8885285332"
+                },
+                "yearOfJoining": {
+                  "type": "string",
+                  "example": "2020"
+                },
+                "empId": {
+                  "type": "string",
+                  "example": "NL-101"
+                },
+                "designation": {
+                  "type": "string",
+                  "example": "SDE-2"
+                }
+              }
+            },
+            "password": {
+              "type": "string",
+              "example": "$2b$10$p1jy8ZLAGVMLJ2MWtqyryuOrL9uRzpN3PZBMrTpEwRhCoGHhJ4Vg6"
+            }
+          }
+        }
+      }
+    },
+    "UserGetAllResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "isActive": {
+                "type": "boolean",
+                "example": true
+              },
+              "isDeleted": {
+                "type": "boolean",
+                "example": false
+              },
+              "_id": {
+                "type": "string",
+                "example": "60473c7edc95a52a58f1447e"
+              },
+              "email": {
+                "type": "string",
+                "example": "poosapati.raju@nineleaps.com"
+              },
+              "details": {
+                "type": "string",
+                "example": "60473b90dc95a52a58f1447b"
+              },
+              "password": {
+                "type": "string",
+                "example": "$2b$10$p1jy8ZLAGVMLJ2MWtqyryuOrL9uRzpN3PZBMrTpEwRhCoGHhJ4Vg6"
+              }
+            }
+          }
+        }
+      }
+    },
+    "PerfEvalAnsPostResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "CREATED"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "answers": {
+              "type": "array",
+              "example": [
+                "Full Stack Developer",
+                "To provide services to the user",
+                "Met deadlines, fixed bugs and delivered good quality code."
+              ],
+              "items": {
+                "type": "string"
+              }
+            },
+            "isActive": {
+              "type": "boolean",
+              "example": true
+            },
+            "isDeleted": {
+              "type": "boolean",
+              "example": false
+            },
+            "_id": {
+              "type": "string",
+              "example": "604879c52f164c44b04838d3"
+            },
+            "email": {
+              "type": "string",
+              "example": "vikash.agarwal@nineleaps.com"
+            },
+            "empId": {
+              "type": "string",
+              "example": "NL-101"
+            },
+            "year": {
+              "type": "string",
+              "example": "2021"
+            },
+            "quarter": {
+              "type": "string",
+              "example": "Q2"
+            },
+            "projectName": {
+              "type": "string",
+              "example": "manager Team"
+            },
+            "createdAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            },
+            "updatedAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            }
+          }
+        }
+      }
+    },
+    "ScoreSheetGetByIdResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "answers": {
+              "type": "array",
+              "example": [
+                "15",
+                "18",
+                "20",
+                "20"
+              ],
+              "items": {
+                "type": "string"
+              }
+            },
+            "isActive": {
+              "type": "boolean",
+              "example": true
+            },
+            "isDeleted": {
+              "type": "boolean",
+              "example": false
+            },
+            "_id": {
+              "type": "string",
+              "example": "6047964a414a4f427aacd4d1"
+            },
+            "email": {
+              "type": "string",
+              "example": "bella@nineleaps.com"
+            },
+            "empId": {
+              "type": "string",
+              "example": "NL-300"
+            },
+            "year": {
+              "type": "string",
+              "example": "2020"
+            },
+            "quarter": {
+              "type": "string",
+              "example": "Q1"
+            },
+            "projectName": {
+              "type": "string",
+              "example": "Tesco"
+            },
+            "total": {
+              "type": "number",
+              "example": 73
+            },
+            "feedback": {
+              "type": "string",
+              "example": "Good Performance"
+            }
+          }
+        }
+      }
+    },
+    "PerfEvalAnsUpdateResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "answers": {
+              "type": "array",
+              "example": [
+                "Full Stack Developer",
+                "To provide services to the user",
+                "Met deadlines, fixed bugs and delivered good quality code."
+              ],
+              "items": {
+                "type": "string"
+              }
+            },
+            "isActive": {
+              "type": "boolean",
+              "example": true
+            },
+            "isDeleted": {
+              "type": "boolean",
+              "example": false
+            },
+            "_id": {
+              "type": "string",
+              "example": "604879c52f164c44b04838d3"
+            },
+            "email": {
+              "type": "string",
+              "example": "vikash.agarwal@nineleaps.com"
+            },
+            "empId": {
+              "type": "string",
+              "example": "NL-101"
+            },
+            "year": {
+              "type": "string",
+              "example": "2021"
+            },
+            "quarter": {
+              "type": "string",
+              "example": "Q2"
+            },
+            "projectName": {
+              "type": "string",
+              "example": "manager Team"
+            },
+            "createdAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            },
+            "updatedAt": {
+              "type": "string",
+              "example": "2021-03-10T11:34:15.300Z"
+            }
+          }
+        }
+      }
+    },
+    "PerfEvalGetResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "answers": {
+                "type": "array",
+                "example": [
+                  "Manager",
+                  "To provide services to the user",
+                  "Met deadlines, fixed bugs and delivered good quality code."
+                ],
+                "items": {
+                  "type": "string"
+                }
+              },
+              "isActive": {
+                "type": "boolean",
+                "example": true
+              },
+              "isDeleted": {
+                "type": "boolean",
+                "example": false
+              },
+              "_id": {
+                "type": "string",
+                "example": "60479fad414a4f427aacd4f8"
+              },
+              "email": {
+                "type": "string",
+                "example": "dasari.darshani@nineleaps.com"
+              },
+              "empId": {
+                "type": "string",
+                "example": "NL-100"
+              },
+              "year": {
+                "type": "string",
+                "example": "2020"
+              },
+              "quarter": {
+                "type": "string",
+                "example": "Q4"
+              },
+              "projectName": {
+                "type": "string",
+                "example": "Swiggy"
+              },
+              "createdAt": {
+                "type": "string",
+                "example": "2021-03-09T16:17:49.444Z"
+              },
+              "updatedAt": {
+                "type": "string",
+                "example": "2021-03-09T16:17:49.444Z"
+              },
+              "__v": {
+                "type": "number",
+                "example": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "PerfEvalAnsAllResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "array",
+          "example": [
+            "Tesco",
+            "Uber"
+          ],
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "PerfEvalAnsGetAllResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "questions": {
+              "type": "array",
+              "example": [
+                "What was your role in the project?",
+                "What are the key features of your project?",
+                "What are your most significant achievements and contributions this quarter?"
+              ],
+              "items": {
+                "type": "string"
+              }
+            },
+            "answers": {
+              "type": "array",
+              "example": [
+                "Frontend Developer",
+                "To provide services to the user",
+                "Met deadlines, fixed bugs and delivered good quality code."
+              ],
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "PerfEvalAnswerDeleteResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "DELETED"
+        }
+      }
+    },
+    "AddEmployee": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "example": "John Doe"
+        },
+        "phoneNumber": {
+          "type": "string",
+          "example": "1234567890"
+        },
+        "role": {
+          "type": "string",
+          "example": "employee"
+        },
+        "yearOfJoining": {
+          "type": "string",
+          "example": "2020"
+        },
+        "designation": {
+          "type": "string",
+          "example": "MTS-1"
+        },
+        "empId": {
+          "type": "string",
+          "example": "NL-002"
+        }
+      },
+      "required": [
+        "name",
+        "phoneNumber",
+        "role",
+        "yearOfJoining",
+        "designation",
+        "empId"
+      ]
+    },
+    "AuthenticationResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "accessToken": {
+              "type": "string",
+              "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpa2FzaC5hZ2Fyd2FsQG5pbmVsZWFwcy5jb20iLCJyb2xlIjoiZW1wbG95ZWUiLCJlbXBJZCI6Ik5MLTMwNSIsIm5hbWUiOiJWaWthc2ggQWdhcndhbCIsImlhdCI6MTYxNTE4OTY4MiwiZXhwIjoxNjE1MTkxNDgyfQ.p0tXao2wp0xiNQLPnfEqS6qzmrBB3OmArMp5LJsCX2g"
+            },
+            "refereshToken": {
+              "type": "string",
+              "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpa2FzaC5hZ2Fyd2FsQG5pbmVsZWFwcy5jb20iLCJyb2xlIjoiZW1wbG95ZWUiLCJlbXBJZCI6Ik5MLTMwNSIsIm5hbWUiOiJWaWthc2ggQWdhcndhbCIsImlhdCI6MTYxNTE4OTY4MiwiZXhwIjoxNjE1Mjc2MDgyfQ.PMbC5qmaoB_1ycuFLadFmWV2H4pntYQr3GFojKbYBOk"
+            }
+          }
+        }
+      }
+    },
+    "ChangePasswordResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "CREATED"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "isActive": {
+              "type": "boolean",
+              "example": true
+            },
+            "isDeleted": {
+              "type": "boolean",
+              "example": false
+            },
+            "_id": {
+              "type": "string",
+              "example": "60473cdddc95a52a58f14480"
+            },
+            "email": {
+              "type": "string",
+              "example": "vikash.agarwal@nineleaps.com"
+            },
+            "details": {
+              "type": "object",
+              "properties": {
+                "isActive": {
+                  "type": "boolean",
+                  "example": true
+                },
+                "isDeleted": {
+                  "type": "boolean",
+                  "example": false
+                },
+                "_id": {
+                  "type": "string",
+                  "example": "60473c2adc95a52a58f1447d"
+                },
+                "name": {
+                  "type": "string",
+                  "example": "Vikash"
+                },
+                "role": {
+                  "type": "string",
+                  "example": "hrManager"
+                },
+                "phoneNumber": {
+                  "type": "string",
+                  "example": "9876543210"
+                },
+                "yearOfJoining": {
+                  "type": "string",
+                  "example": "2020"
+                },
+                "empId": {
+                  "type": "string",
+                  "example": "NL-103"
+                },
+                "designation": {
+                  "type": "string",
+                  "example": "Head-HR"
+                }
+              }
+            },
+            "password": {
+              "type": "string",
+              "example": "$2b$10$mMxGwwF287tCfvGf7c.Iy.O5ZOOKdpzZX1pnz6cPJwGtd2/C/wwJi"
+            },
+            "createdAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            },
+            "updatedAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            }
+          }
+        }
+      }
+    },
+    "ProjectResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "CREATED"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "isDeleted": {
+              "type": "boolean",
+              "example": false
+            },
+            "_id": {
+              "type": "string",
+              "example": "6045b3842193a43dc4962cca"
+            },
+            "projectId": {
+              "type": "string",
+              "example": "999"
+            },
+            "projectName": {
+              "type": "string",
+              "example": "Tesco"
+            },
+            "managerId": {
+              "type": "string",
+              "example": "6042ea899acc4f1e40ca8006"
+            },
+            "hrId": {
+              "type": "string",
+              "example": "6042ea899acc4f1e40ca8446"
+            },
+            "createdAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            },
+            "updatedAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            }
+          }
+        }
+      }
+    },
+    "AccessTokenResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "CREATED"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "accessToken": {
+              "type": "string",
+              "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpa2FzaC5hZ2Fyd2FsQG5pbmVsZWFwcy5jb20iLCJyb2xlIjoiaHJNYW5hZ2VyIiwiZW1wSWQiOiJOTC0xMDMiLCJuYW1lIjoiVmlrYXNoIiwiaWF0IjoxNjE1ODIyNDQxLCJleHAiOjE2MTU4MjQyNDF9.4kT3VRIb2p5heMeBaf-GNkZB7xqjRTMkdbMKcYspzP0"
+            }
+          }
+        }
+      }
+    },
+    "ProjectGetResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "array",
+          "example": [
+            "Zomato",
+            "Swiggy",
+            "HR-Team"
+          ],
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "ProjectManagerResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "array",
+          "example": [
+            "Zomato"
+          ],
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "ProjectHrResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "array",
+          "example": [
+            "Ola",
+            "IRCTC"
+          ],
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "ProjectDeleteResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "DELETED"
+        }
+      }
+    },
+    "projectUpdateResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "isDeleted": {
+              "type": "boolean",
+              "example": false
+            },
+            "_id": {
+              "type": "string",
+              "example": "6045b3842193a43dc4962cca"
+            },
+            "projectId": {
+              "type": "string",
+              "example": "997"
+            },
+            "projectName": {
+              "type": "string",
+              "example": "Tesco"
+            },
+            "managerId": {
+              "type": "string",
+              "example": "6042ea899acc4f1e40ca8006"
+            },
+            "hrId": {
+              "type": "string",
+              "example": "6042ea899acc4f1e40ca8446"
+            },
+            "createdAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            },
+            "updatedAt": {
+              "type": "string",
+              "example": "2021-03-10T11:34:15.300Z"
+            }
+          }
+        }
+      }
+    },
+    "ProjectEmpResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "CREATED"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "isDeleted": {
+              "type": "boolean",
+              "example": false
+            },
+            "_id": {
+              "type": "string",
+              "example": "6045be402193a43dc4962ccf"
+            },
+            "projectId": {
+              "type": "string",
+              "example": "6042ec259acc4f1e40ca8008"
+            },
+            "empId": {
+              "type": "string",
+              "example": "0339e365cd72829f8b89791"
+            },
+            "year": {
+              "type": "string",
+              "example": "2021"
+            },
+            "quarter": {
+              "type": "string",
+              "example": "Q2"
+            },
+            "createdAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            },
+            "updatedAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            }
+          }
+        }
+      }
+    },
+    "ProjectEmpGetResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "empId": {
+                "type": "string",
+                "example": "NL-304"
+              },
+              "empName": {
+                "type": "string",
+                "example": "Deepak"
+              },
+              "empRole": {
+                "type": "string",
+                "example": "SDE-1"
+              }
+            }
+          }
+        }
+      }
+    },
+    "ProjectTotalGetResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "empId": {
+                "type": "string",
+                "example": "NL-301"
+              },
+              "empName": {
+                "type": "string",
+                "example": "Susan"
+              },
+              "empRole": {
+                "type": "string",
+                "example": "MTS-2"
+              },
+              "total": {
+                "type": "number",
+                "example": 94
+              }
+            }
+          }
+        }
+      }
+    },
+    "projectEmpUpdateResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "isDeleted": {
+              "type": "boolean",
+              "example": false
+            },
+            "_id": {
+              "type": "string",
+              "example": "6045be402193a43dc4962ccf"
+            },
+            "projectId": {
+              "type": "string",
+              "example": "6042ec259acc4f1e40ca8008"
+            },
+            "empId": {
+              "type": "string",
+              "example": "60339e365cd72829f8b89791"
+            },
+            "year": {
+              "type": "string",
+              "example": "2021"
+            },
+            "quarter": {
+              "type": "string",
+              "example": "Q2"
+            },
+            "createdAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            },
+            "updatedAt": {
+              "type": "string",
+              "example": "2021-03-10T11:34:15.300Z"
+            }
+          }
+        }
+      }
+    },
+    "ProjectEmpDeleteResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "DELETED"
+        }
+      }
+    },
+    "ScoreSheetQuestion": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "CREATED"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "questions": {
+              "type": "array",
+              "example": [
+                "Effort",
+                "Quality",
+                "Productivity",
+                "Creativity"
+              ],
+              "items": {
+                "type": "string"
+              }
+            },
+            "isDeleted": {
+              "type": "boolean",
+              "example": false
+            },
+            "_id": {
+              "type": "string",
+              "example": "6043cd73a8eaf340e46200a2"
+            },
+            "year": {
+              "type": "string",
+              "example": "2021"
+            },
+            "quarter": {
+              "type": "string",
+              "example": "Q2"
+            },
+            "createdAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            },
+            "updatedAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            }
+          }
+        }
+      }
+    },
+    "ScoreSheetUpdateQuestion": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "questions": {
+              "type": "array",
+              "example": [
+                "Effort",
+                "Quantity",
+                "Productivity",
+                "Creativity"
+              ],
+              "items": {
+                "type": "string"
+              }
+            },
+            "isDeleted": {
+              "type": "boolean",
+              "example": false
+            },
+            "_id": {
+              "type": "string",
+              "example": "6043cd73a8eaf340e46200a2"
+            },
+            "year": {
+              "type": "string",
+              "example": "2021"
+            },
+            "quarter": {
+              "type": "string",
+              "example": "Q2"
+            },
+            "createdAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            },
+            "updatedAt": {
+              "type": "string",
+              "example": "2021-03-10T11:34:15.300Z"
+            }
+          }
+        }
+      }
+    },
+    "ScoreSheetQuestionGetResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "questions": {
+              "type": "array",
+              "example": [
+                "Effort",
+                "Quality of deliverables",
+                "Problem Solving Skills",
+                "Ways of Working"
+              ],
+              "items": {
+                "type": "string"
+              }
+            },
+            "isActive": {
+              "type": "boolean",
+              "example": true
+            },
+            "isDeleted": {
+              "type": "boolean",
+              "example": false
+            },
+            "_id": {
+              "type": "string",
+              "example": "60475d12414a4f427aacd4ad"
+            },
+            "year": {
+              "type": "string",
+              "example": "2020"
+            },
+            "quarter": {
+              "type": "string",
+              "example": "Q4"
+            },
+            "startDate": {
+              "type": "string",
+              "example": "2020-12-19T18:30:00.000Z"
+            },
+            "endDate": {
+              "type": "string",
+              "example": "2021-03-31T18:30:00.000Z"
+            }
+          }
+        }
+      }
+    },
+    "ScoreSheetQuestionStatusResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "isLive": {
+              "type": "boolean",
+              "example": true
+            }
+          }
+        }
+      }
+    },
+    "ScoreSheetAnswer": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "CREATED"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "answers": {
+              "type": "array",
+              "example": [
+                "25",
+                "20",
+                "25",
+                "22"
+              ],
+              "items": {
+                "type": "string"
+              }
+            },
+            "isDeleted": {
+              "type": "boolean",
+              "example": false
+            },
+            "_id": {
+              "type": "string",
+              "example": "6045c9a32193a43dc4962cd0"
+            },
+            "email": {
+              "type": "string",
+              "example": "poosapati.raju@nineleaps.com"
+            },
+            "empId": {
+              "type": "string",
+              "example": "NL-100"
+            },
+            "year": {
+              "type": "string",
+              "example": "2020"
+            },
+            "quarter": {
+              "type": "string",
+              "example": "Q4"
+            },
+            "project_name": {
+              "type": "string",
+              "example": "PEP"
+            },
+            "total": {
+              "type": "number",
+              "example": 70
+            },
+            "feedback": {
+              "type": "string",
+              "example": "Outstanding Performance"
+            },
+            "createdAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            },
+            "updatedAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            }
+          }
+        }
+      }
+    },
+    "ScoreSheetAnswerUpdateResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "answers": {
+              "type": "array",
+              "example": [
+                "25",
+                "20",
+                "25",
+                "22"
+              ],
+              "items": {
+                "type": "string"
+              }
+            },
+            "isDeleted": {
+              "type": "boolean",
+              "example": false
+            },
+            "_id": {
+              "type": "string",
+              "example": "6045c9a32193a43dc4962cd0"
+            },
+            "email": {
+              "type": "string",
+              "example": "poosapati.raju@nineleaps.com"
+            },
+            "empId": {
+              "type": "string",
+              "example": "NL-100"
+            },
+            "year": {
+              "type": "string",
+              "example": "2020"
+            },
+            "quarter": {
+              "type": "string",
+              "example": "Q4"
+            },
+            "project_name": {
+              "type": "string",
+              "example": "PEP"
+            },
+            "total": {
+              "type": "number",
+              "example": 70
+            },
+            "feedback": {
+              "type": "string",
+              "example": "Outstanding Performance"
+            },
+            "createdAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            },
+            "updatedAt": {
+              "type": "string",
+              "example": "2021-03-10T11:34:15.300Z"
+            }
+          }
+        }
+      }
+    },
+    "ScoreSheetAnsByProject": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "questions": {
+              "type": "array",
+              "example": [
+                "Effort",
+                "Quality of deliverables",
+                "Problem Solving Skills",
+                "Ways of Working"
+              ],
+              "items": {
+                "type": "string"
+              }
+            },
+            "answers": {
+              "type": "array",
+              "example": [
+                "20",
+                "19",
+                "20",
+                "22"
+              ],
+              "items": {
+                "type": "string"
+              }
+            },
+            "total": {
+              "type": "number",
+              "example": 81
+            },
+            "feedback": {
+              "type": "string",
+              "example": "Good"
+            },
+            "average": {
+              "type": "number",
+              "example": 81
+            }
+          }
+        }
+      }
+    },
+    "ScoreSheetAnsAverageResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "average": {
+              "type": "number",
+              "example": 86.75
+            },
+            "maxScore": {
+              "type": "number",
+              "example": 100
+            }
+          }
+        }
+      }
+    },
+    "ScoreSheetAnswerDeleteResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "DELETED"
+        }
+      }
+    },
+    "SelfEvalPostResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "CREATED"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "questions": {
+              "type": "array",
+              "example": [
+                "What was your role in the project?",
+                "What are the key features of your project?",
+                "What are your most significant achievements and contributions this quarter?",
+                "How would you rate your performance this quarter? Why?"
+              ],
+              "items": {
+                "type": "string"
+              }
+            },
+            "isActive": {
+              "type": "boolean",
+              "example": true
+            },
+            "isDeleted": {
+              "type": "boolean",
+              "example": false
+            },
+            "_id": {
+              "type": "string",
+              "example": "604f793c5b2546d2c0bea15d"
+            },
+            "year": {
+              "type": "string",
+              "example": "2021"
+            },
+            "quarter": {
+              "type": "string",
+              "example": "Q2"
+            },
+            "startDate": {
+              "type": "string",
+              "example": "2020-12-01T18:30:00.000Z"
+            },
+            "endDate": {
+              "type": "string",
+              "example": "2020-12-18T18:30:00.000Z"
+            },
+            "createdAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            },
+            "updatedAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            }
+          }
+        }
+      }
+    },
+    "SelfEvalQuestionUpdatedResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "questions": {
+              "type": "array",
+              "example": [
+                "What was your role in the project?",
+                "What are the key features of your project?",
+                "What are your most significant achievements and contributions this quarter?"
+              ],
+              "items": {
+                "type": "string"
+              }
+            },
+            "isDeleted": {
+              "type": "boolean",
+              "example": false
+            },
+            "_id": {
+              "type": "string",
+              "example": "6045cb822193a43dc4962cd1"
+            },
+            "year": {
+              "type": "string",
+              "example": "2021"
+            },
+            "quarter": {
+              "type": "string",
+              "example": "Q2"
+            },
+            "createdAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            },
+            "updatedAt": {
+              "type": "string",
+              "example": "2021-03-10T11:34:15.300Z"
+            }
+          }
+        }
+      }
+    },
+    "SelfEvalStatusResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "isLive": {
+              "type": "boolean",
+              "example": false
+            }
+          }
+        }
+      }
+    },
+    "SelfEvalQuesDeleteResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "DELETED"
+        }
+      }
+    },
+    "ReportABugResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "CREATED"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "isActive": {
+              "type": "boolean",
+              "example": true
+            },
+            "isDeleted": {
+              "type": "boolean",
+              "example": false
+            },
+            "_id": {
+              "type": "string",
+              "example": "6045cc852193a43dc4962cd2"
+            },
+            "empId": {
+              "type": "string",
+              "example": "NL-305"
+            },
+            "page": {
+              "type": "string",
+              "example": "self assessment"
+            },
+            "description": {
+              "type": "string",
+              "example": "no dropdown"
+            },
+            "createdAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            },
+            "updatedAt": {
+              "type": "string",
+              "example": "2021-03-09T11:34:15.300Z"
+            }
+          }
+        }
+      }
+    },
+    "ReportABugGetResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "isActive": {
+                "type": "boolean",
+                "example": true
+              },
+              "isDeleted": {
+                "type": "boolean",
+                "example": false
+              },
+              "_id": {
+                "type": "string",
+                "example": "6042004bf032823f80f955bd"
+              },
+              "empId": {
+                "type": "string",
+                "example": "NL-315"
+              },
+              "page": {
+                "type": "string",
+                "example": "self assessment"
+              },
+              "description": {
+                "type": "string",
+                "example": "no dropdown"
+              }
+            }
+          }
+        }
+      }
+    },
+    "BugReportDeleteResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "DELETED"
+        }
+      }
+    },
+    "ScoreSheetQuesDeleteResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "DELETED"
+        }
+      }
+    },
+    "SelfEvalGetQuestionResponse": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "SUCCESS"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "questions": {
+              "type": "array",
+              "example": [
+                "What was your role in the project?",
+                "What are the key features of your project?",
+                "What are your most significant achievements and contributions this quarter?"
+              ],
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Credentials": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "example": "johndoe@nineleaps.com"
+        },
+        "password": {
+          "type": "string",
+          "example": "abcd123"
+        }
+      },
+      "required": [
+        "email",
+        "password"
+      ]
+    },
+    "AddUser": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "example": "johndoe@nineleaps.com"
+        },
+        "empId": {
+          "type": "string",
+          "example": "604b6b3e5a5f0d116da6a7d0"
+        },
+        "password": {
+          "type": "string",
+          "example": "abcd123"
+        }
+      },
+      "required": [
+        "email",
+        "empId",
+        "password"
+      ]
+    },
+    "Addperfevalans": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "example": "johndoe@nineleaps.com"
+        },
+        "empId": {
+          "type": "string",
+          "example": "NL-002"
+        },
+        "year": {
+          "type": "string",
+          "example": "2020"
+        },
+        "quarter": {
+          "type": "string",
+          "example": "Q1"
+        },
+        "$answers": {
+          "type": "array",
+          "example": [
+            "answer1",
+            "answer2",
+            "answer3"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "projectName": {
+          "type": "string",
+          "example": "Abc"
+        }
+      },
+      "required": [
+        "email",
+        "empId",
+        "year",
+        "quarter",
+        "projectName"
+      ]
+    },
+    "Addproject": {
+      "type": "object",
+      "properties": {
+        "projectId": {
+          "type": "string",
+          "example": "001"
+        },
+        "projectName": {
+          "type": "string",
+          "example": "Abc"
+        },
+        "managerId": {
+          "type": "string",
+          "example": "604736b322d2232539df0355"
+        },
+        "hrId": {
+          "type": "string",
+          "example": "60473bdddc95a52a58f1447c"
+        },
+        "startDate": {
+          "type": "string",
+          "example": "01/01/2020"
+        },
+        "endDate": {
+          "type": "string",
+          "example": "01/01/2021"
+        }
+      },
+      "required": [
+        "projectId",
+        "projectName",
+        "managerId",
+        "hrId",
+        "startDate",
+        "endDate"
+      ]
+    },
+    "Addprojectemployee": {
+      "type": "object",
+      "properties": {
+        "projectId": {
+          "type": "string",
+          "example": "6047b058414a4f427aacd51b"
+        },
+        "empId": {
+          "type": "string",
+          "example": "60473b90dc95a52a58f1447b"
+        },
+        "year": {
+          "type": "string",
+          "example": "2020"
+        },
+        "quarter": {
+          "type": "string",
+          "example": "Q1"
+        }
+      },
+      "required": [
+        "projectId",
+        "empId",
+        "year",
+        "quarter"
+      ]
+    },
+    "AddScoreSheetAns": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "example": "abcdef@nineleaps.com"
+        },
+        "empId": {
+          "type": "string",
+          "example": "NL-002"
+        },
+        "year": {
+          "type": "string",
+          "example": "2020"
+        },
+        "quarter": {
+          "type": "string",
+          "example": "Q1"
+        },
+        "$answers": {
+          "type": "array",
+          "example": [
+            "01",
+            "02",
+            "03"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "projectName": {
+          "type": "string",
+          "example": "Abc"
+        },
+        "total": {
+          "type": "number",
+          "example": 100
+        },
+        "feedback": {
+          "type": "string",
+          "example": "Outstanding Performance"
+        }
+      },
+      "required": [
+        "email",
+        "empId",
+        "year",
+        "quarter",
+        "projectName",
+        "total",
+        "feedback"
+      ]
+    },
+    "AddScoreSheetQues": {
+      "type": "object",
+      "properties": {
+        "quarter": {
+          "type": "string",
+          "example": "Q1"
+        },
+        "year": {
+          "type": "string",
+          "example": "2020"
+        },
+        "$questions": {
+          "type": "array",
+          "example": [
+            "Question1",
+            "Question2",
+            "Question3"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "startDate": {
+          "type": "string",
+          "example": "01/01/2020"
+        },
+        "endDate": {
+          "type": "string",
+          "example": "01/01/2021"
+        }
+      },
+      "required": [
+        "quarter",
+        "year",
+        "startDate",
+        "endDate"
+      ]
+    },
+    "Addselfevalques": {
+      "type": "object",
+      "properties": {
+        "quarter": {
+          "type": "string",
+          "example": "Q1"
+        },
+        "year": {
+          "type": "string",
+          "example": "2020"
+        },
+        "$questions": {
+          "type": "array",
+          "example": [
+            "Question"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "startDate": {
+          "type": "string",
+          "example": "01/01/2020"
+        },
+        "endDate": {
+          "type": "string",
+          "example": "01/01/2021"
+        }
+      },
+      "required": [
+        "quarter",
+        "year",
+        "startDate",
+        "endDate"
+      ]
+    },
+    "AddBugReport": {
+      "type": "object",
+      "properties": {
+        "empId": {
+          "type": "string",
+          "example": "NL-002"
+        },
+        "page": {
+          "type": "string",
+          "example": "self assessment"
+        },
+        "description": {
+          "type": "string",
+          "example": "no dropdown"
+        }
+      },
+      "required": [
+        "empId",
+        "page",
+        "description"
+      ]
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "name": "Authorization",
+        "description": "any description...",
+        "scheme": "bearer"
+      }
+    }
+  },
+  "parameters": {
+    "apiPrefix": "api/v1"
+  }
+}
