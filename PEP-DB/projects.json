@@ -1,0 +1,190 @@
+[{
+  "_id": {
+    "$oid": "60475aa1414a4f427aacd4a2"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": "205",
+  "projectName": "Zomato",
+  "managerId": {
+    "$oid": "604743d2dc95a52a58f1448b"
+  },
+  "hrId": {
+    "$oid": "60473bdddc95a52a58f1447c"
+  },
+  "startDate": {
+    "$date": "2020-10-30T18:30:00Z"
+  },
+  "endDate": {
+    "$date": "2021-02-25T18:30:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-03-09T11:23:13.607Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:23:13.607Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60475b12414a4f427aacd4a3"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": "200",
+  "projectName": "Tesco",
+  "managerId": {
+    "$oid": "604736b322d2232539df0355"
+  },
+  "hrId": {
+    "$oid": "60473bdddc95a52a58f1447c"
+  },
+  "startDate": {
+    "$date": "2020-02-01T18:30:00Z"
+  },
+  "endDate": {
+    "$date": "2020-05-28T18:30:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-03-09T11:25:06.868Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:25:06.868Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60475b2f414a4f427aacd4a4"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": "201",
+  "projectName": "Uber",
+  "managerId": {
+    "$oid": "604736b322d2232539df0355"
+  },
+  "hrId": {
+    "$oid": "60473bdddc95a52a58f1447c"
+  },
+  "startDate": {
+    "$date": "2020-04-01T18:30:00Z"
+  },
+  "endDate": {
+    "$date": "2020-07-15T18:30:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-03-09T11:25:35.225Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:25:35.225Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60475b64414a4f427aacd4a5"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": "202",
+  "projectName": "Ola",
+  "managerId": {
+    "$oid": "604736b322d2232539df0355"
+  },
+  "hrId": {
+    "$oid": "60474392dc95a52a58f1448a"
+  },
+  "startDate": {
+    "$date": "2020-07-16T18:30:00Z"
+  },
+  "endDate": {
+    "$date": "2020-09-30T18:30:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-03-09T11:26:28.854Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:26:28.854Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60475ba4414a4f427aacd4a6"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": "203",
+  "projectName": "Swiggy",
+  "managerId": {
+    "$oid": "604736b322d2232539df0355"
+  },
+  "hrId": {
+    "$oid": "60473bdddc95a52a58f1447c"
+  },
+  "startDate": {
+    "$date": "2020-11-27T18:30:00Z"
+  },
+  "endDate": {
+    "$date": "2021-03-28T18:30:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-03-09T11:27:32.183Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:27:32.183Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60475bf1414a4f427aacd4a7"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": "204",
+  "projectName": "IRCTC",
+  "managerId": {
+    "$oid": "604743d2dc95a52a58f1448b"
+  },
+  "hrId": {
+    "$oid": "60474392dc95a52a58f1448a"
+  },
+  "startDate": {
+    "$date": "2020-01-16T18:30:00Z"
+  },
+  "endDate": {
+    "$date": "2020-09-30T18:30:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-03-09T11:28:49.847Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:28:49.847Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604764ee414a4f427aacd4c6"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": "999",
+  "projectName": "HR-Team",
+  "managerId": {
+    "$oid": "60473c2adc95a52a58f1447d"
+  },
+  "hrId": {
+    "$oid": "60473c2adc95a52a58f1447d"
+  },
+  "startDate": {
+    "$date": "2013-12-31T18:30:00Z"
+  },
+  "endDate": {
+    "$date": "2050-12-31T18:30:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-03-09T12:07:10.830Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T12:07:10.830Z"
+  },
+  "__v": 0
+}]

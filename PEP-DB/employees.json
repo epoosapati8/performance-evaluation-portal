@@ -1,0 +1,267 @@
+[{
+  "_id": {
+    "$oid": "604736b322d2232539df0355"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "name": "Darshani",
+  "role": "reportingManager",
+  "phoneNumber": "8210701619",
+  "yearOfJoining": "2020",
+  "empId": "NL-100",
+  "designation": "Project Manager",
+  "createdAt": {
+    "$date": "2021-03-09T08:49:55.461Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T08:49:55.461Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60473b90dc95a52a58f1447b"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "name": "Raju",
+  "role": "employee",
+  "phoneNumber": "8885285332",
+  "yearOfJoining": "2020",
+  "empId": "NL-101",
+  "designation": "SDE-2",
+  "createdAt": {
+    "$date": "2021-03-09T09:10:40.906Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T09:10:40.906Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60473bdddc95a52a58f1447c"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "name": "Archana",
+  "role": "hr",
+  "phoneNumber": "9709069711",
+  "yearOfJoining": "2020",
+  "empId": "NL-102",
+  "designation": "HR-Generalist",
+  "createdAt": {
+    "$date": "2021-03-09T09:11:57.505Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T09:11:57.505Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60473c2adc95a52a58f1447d"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "name": "Vikash",
+  "role": "hrManager",
+  "phoneNumber": "9876543210",
+  "yearOfJoining": "2020",
+  "empId": "NL-103",
+  "designation": "Head-HR",
+  "createdAt": {
+    "$date": "2021-03-09T09:13:14.003Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T09:13:14.003Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60474392dc95a52a58f1448a"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "name": "John",
+  "role": "hr",
+  "phoneNumber": "9876657210",
+  "yearOfJoining": "2020",
+  "empId": "NL-104",
+  "designation": "HR-Generalist",
+  "createdAt": {
+    "$date": "2021-03-09T09:44:50.608Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T09:44:50.608Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604743d2dc95a52a58f1448b"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "name": "Carol",
+  "role": "reportingManager",
+  "phoneNumber": "9876657216",
+  "yearOfJoining": "2020",
+  "empId": "NL-105",
+  "designation": "Project-Manager",
+  "createdAt": {
+    "$date": "2021-03-09T09:45:54.581Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T09:45:54.581Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6047515cdc95a52a58f14496"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "name": "Bella",
+  "role": "employee",
+  "phoneNumber": "9176657216",
+  "yearOfJoining": "2020",
+  "empId": "NL-300",
+  "designation": "MTS-1",
+  "createdAt": {
+    "$date": "2021-03-09T10:43:40.678Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T10:43:40.678Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60475174dc95a52a58f14497"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "name": "Susan",
+  "role": "employee",
+  "phoneNumber": "9276657216",
+  "yearOfJoining": "2020",
+  "empId": "NL-301",
+  "designation": "MTS-2",
+  "createdAt": {
+    "$date": "2021-03-09T10:44:04.205Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T10:44:04.205Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604751b9dc95a52a58f14498"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "name": "Sita",
+  "role": "employee",
+  "phoneNumber": "9376657216",
+  "yearOfJoining": "2020",
+  "empId": "NL-302",
+  "designation": "MTS-1",
+  "createdAt": {
+    "$date": "2021-03-09T10:45:13.072Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T10:45:13.072Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604751e9dc95a52a58f14499"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "name": "Geeta",
+  "role": "employee",
+  "phoneNumber": "9476657216",
+  "yearOfJoining": "2020",
+  "empId": "NL-303",
+  "designation": "SDE-2",
+  "createdAt": {
+    "$date": "2021-03-09T10:46:01.373Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T10:46:01.373Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60475202dc95a52a58f1449a"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "name": "Deepak",
+  "role": "employee",
+  "phoneNumber": "9576657216",
+  "yearOfJoining": "2020",
+  "empId": "NL-304",
+  "designation": "SDE-1",
+  "createdAt": {
+    "$date": "2021-03-09T10:46:26.030Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T10:46:26.030Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6047522fdc95a52a58f1449b"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "name": "Krishna",
+  "role": "employee",
+  "phoneNumber": "9676657216",
+  "yearOfJoining": "2020",
+  "empId": "NL-305",
+  "designation": "MTS-3",
+  "createdAt": {
+    "$date": "2021-03-09T10:47:11.777Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T10:47:11.777Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6047525fdc95a52a58f1449c"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "name": "Kalyan",
+  "role": "employee",
+  "phoneNumber": "9776657216",
+  "yearOfJoining": "2020",
+  "empId": "NL-306",
+  "designation": "SDE-3",
+  "createdAt": {
+    "$date": "2021-03-09T10:47:59.345Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T10:47:59.345Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60475270dc95a52a58f1449d"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "name": "Pavan",
+  "role": "employee",
+  "phoneNumber": "9076657216",
+  "yearOfJoining": "2020",
+  "empId": "NL-307",
+  "designation": "MTS-3",
+  "createdAt": {
+    "$date": "2021-03-09T10:48:16.650Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T10:48:16.650Z"
+  },
+  "__v": 0
+}]

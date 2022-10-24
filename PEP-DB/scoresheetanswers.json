@@ -1,0 +1,836 @@
+[{
+  "_id": {
+    "$oid": "6047964a414a4f427aacd4d1"
+  },
+  "answers": [
+    "15",
+    "18",
+    "20",
+    "20"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "bella@nineleaps.com",
+  "empId": "NL-300",
+  "year": "2020",
+  "quarter": "Q1",
+  "projectName": "Tesco",
+  "total": 73,
+  "feedback": "Good Performance",
+  "createdAt": {
+    "$date": "2021-03-09T15:37:46.478Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T15:37:46.478Z"
+  },
+  "__v": 0,
+  "duration": 2
+},{
+  "_id": {
+    "$oid": "604796c6414a4f427aacd4d3"
+  },
+  "answers": [
+    "25",
+    "19",
+    "25",
+    "25"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "susan@nineleaps.com",
+  "empId": "NL-301",
+  "year": "2020",
+  "quarter": "Q1",
+  "projectName": "Tesco",
+  "total": 94,
+  "feedback": "Outstanding Performance",
+  "createdAt": {
+    "$date": "2021-03-09T15:39:50.231Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T15:39:50.231Z"
+  },
+  "__v": 0,
+  "duration": 3
+},{
+  "_id": {
+    "$oid": "6047973e414a4f427aacd4d5"
+  },
+  "answers": [
+    "15",
+    "10",
+    "18",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "bella@nineleaps.com",
+  "empId": "NL-300",
+  "year": "2020",
+  "quarter": "Q1",
+  "projectName": "IRCTC",
+  "total": 65,
+  "feedback": "Should Improve",
+  "createdAt": {
+    "$date": "2021-03-09T15:41:50.932Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T15:41:50.932Z"
+  },
+  "__v": 0,
+  "duration": 1
+},{
+  "_id": {
+    "$oid": "604797bf414a4f427aacd4d7"
+  },
+  "answers": [
+    "20",
+    "18",
+    "20",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "geeta@nineleaps.com",
+  "empId": "NL-303",
+  "year": "2020",
+  "quarter": "Q1",
+  "projectName": "IRCTC",
+  "total": 80,
+  "feedback": "Good",
+  "createdAt": {
+    "$date": "2021-03-09T15:43:59.919Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T15:43:59.919Z"
+  },
+  "__v": 0,
+  "duration": 3
+},{
+  "_id": {
+    "$oid": "60479836414a4f427aacd4d9"
+  },
+  "answers": [
+    "20",
+    "18",
+    "20",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "bella@nineleaps.com",
+  "empId": "NL-300",
+  "year": "2020",
+  "quarter": "Q2",
+  "projectName": "Tesco",
+  "total": 80,
+  "feedback": "Good",
+  "createdAt": {
+    "$date": "2021-03-09T15:45:58.959Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T15:45:58.959Z"
+  },
+  "__v": 0,
+  "duration": 1
+},{
+  "_id": {
+    "$oid": "60479874414a4f427aacd4db"
+  },
+  "answers": [
+    "20",
+    "17",
+    "20",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "krishna@nineleaps.com",
+  "empId": "NL-305",
+  "year": "2020",
+  "quarter": "Q2",
+  "projectName": "Tesco",
+  "total": 79,
+  "feedback": "Good",
+  "createdAt": {
+    "$date": "2021-03-09T15:47:00.075Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T15:47:00.075Z"
+  },
+  "__v": 0,
+  "duration": 1
+},{
+  "_id": {
+    "$oid": "604798c8414a4f427aacd4dd"
+  },
+  "answers": [
+    "20",
+    "19",
+    "20",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "sita@nineleaps.com",
+  "empId": "NL-302",
+  "year": "2020",
+  "quarter": "Q2",
+  "projectName": "Uber",
+  "total": 81,
+  "feedback": "Good",
+  "createdAt": {
+    "$date": "2021-03-09T15:48:24.601Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T15:48:24.601Z"
+  },
+  "__v": 0,
+  "duration": 2
+},{
+  "_id": {
+    "$oid": "604798ed414a4f427aacd4df"
+  },
+  "answers": [
+    "20",
+    "20",
+    "20",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "geeta@nineleaps.com",
+  "empId": "NL-303",
+  "year": "2020",
+  "quarter": "Q2",
+  "projectName": "Uber",
+  "total": 82,
+  "feedback": "Good",
+  "createdAt": {
+    "$date": "2021-03-09T15:49:01.905Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T15:49:01.905Z"
+  },
+  "__v": 0,
+  "duration": 2
+},{
+  "_id": {
+    "$oid": "60479957414a4f427aacd4e1"
+  },
+  "answers": [
+    "20",
+    "20",
+    "20",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "kalyan@nineleaps.com",
+  "empId": "NL-306",
+  "year": "2020",
+  "quarter": "Q2",
+  "projectName": "IRCTC",
+  "total": 82,
+  "feedback": "Good",
+  "createdAt": {
+    "$date": "2021-03-09T15:50:47.154Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T15:50:47.154Z"
+  },
+  "__v": 0,
+  "duration": 3
+},{
+  "_id": {
+    "$oid": "604799ab414a4f427aacd4e5"
+  },
+  "answers": [
+    "15",
+    "20",
+    "20",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "sita@nineleaps.com",
+  "empId": "NL-302",
+  "year": "2020",
+  "quarter": "Q3",
+  "projectName": "Uber",
+  "total": 77,
+  "feedback": "Good",
+  "createdAt": {
+    "$date": "2021-03-09T15:52:11.261Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T15:52:11.261Z"
+  },
+  "__v": 0,
+  "duration": 1
+},{
+  "_id": {
+    "$oid": "604799d2414a4f427aacd4e6"
+  },
+  "answers": [
+    "15",
+    "23",
+    "20",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "geeta@nineleaps.com",
+  "empId": "NL-303",
+  "year": "2020",
+  "quarter": "Q3",
+  "projectName": "Uber",
+  "total": 80,
+  "feedback": "Good",
+  "createdAt": {
+    "$date": "2021-03-09T15:52:50.876Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T15:52:50.876Z"
+  },
+  "__v": 0,
+  "duration": 3
+},{
+  "_id": {
+    "$oid": "60479a31414a4f427aacd4e9"
+  },
+  "answers": [
+    "15",
+    "23",
+    "20",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "deepak@nineleaps.com",
+  "empId": "NL-304",
+  "year": "2020",
+  "quarter": "Q3",
+  "projectName": "Ola",
+  "total": 80,
+  "feedback": "Good",
+  "createdAt": {
+    "$date": "2021-03-09T15:54:25.813Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T15:54:25.813Z"
+  },
+  "__v": 0,
+  "duration": 2
+},{
+  "_id": {
+    "$oid": "60479a4c414a4f427aacd4ea"
+  },
+  "answers": [
+    "15",
+    "23",
+    "25",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "susan@nineleaps.com",
+  "empId": "NL-301",
+  "year": "2020",
+  "quarter": "Q3",
+  "projectName": "Ola",
+  "total": 85,
+  "feedback": "Good",
+  "createdAt": {
+    "$date": "2021-03-09T15:54:52.514Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T15:54:52.514Z"
+  },
+  "__v": 0,
+  "duration": 2
+},{
+  "_id": {
+    "$oid": "60479abf414a4f427aacd4ed"
+  },
+  "answers": [
+    "15",
+    "23",
+    "25",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "sita@nineleaps.com",
+  "empId": "NL-302",
+  "year": "2020",
+  "quarter": "Q3",
+  "projectName": "IRCTC",
+  "total": 85,
+  "feedback": "Good",
+  "createdAt": {
+    "$date": "2021-03-09T15:56:47.668Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T15:56:47.668Z"
+  },
+  "__v": 0,
+  "duration": 1.5
+},{
+  "_id": {
+    "$oid": "60479ace414a4f427aacd4ee"
+  },
+  "answers": [
+    "15",
+    "23",
+    "25",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "kalyan@nineleaps.com",
+  "empId": "NL-306",
+  "year": "2020",
+  "quarter": "Q3",
+  "projectName": "IRCTC",
+  "total": 85,
+  "feedback": "Good",
+  "createdAt": {
+    "$date": "2021-03-09T15:57:02.359Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T15:57:02.359Z"
+  },
+  "__v": 0,
+  "duration": 3
+},{
+  "_id": {
+    "$oid": "6047a13a414a4f427aacd4f9"
+  },
+  "answers": [
+    "15",
+    "23",
+    "25",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "dasari.darshani@nineleaps.com",
+  "empId": "NL-100",
+  "year": "2020",
+  "quarter": "Q1",
+  "projectName": "Tesco",
+  "total": 85,
+  "feedback": "Good",
+  "createdAt": {
+    "$date": "2021-03-09T16:24:26.302Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T16:24:26.302Z"
+  },
+  "__v": 0,
+  "duration": 3
+},{
+  "_id": {
+    "$oid": "6047a146414a4f427aacd4fa"
+  },
+  "answers": [
+    "15",
+    "25",
+    "25",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "dasari.darshani@nineleaps.com",
+  "empId": "NL-100",
+  "year": "2020",
+  "quarter": "Q2",
+  "projectName": "Tesco",
+  "total": 87,
+  "feedback": "Good",
+  "createdAt": {
+    "$date": "2021-03-09T16:24:38.236Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T16:24:38.236Z"
+  },
+  "__v": 0,
+  "duration": 1
+},{
+  "_id": {
+    "$oid": "6047a150414a4f427aacd4fb"
+  },
+  "answers": [
+    "15",
+    "25",
+    "25",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "dasari.darshani@nineleaps.com",
+  "empId": "NL-100",
+  "year": "2020",
+  "quarter": "Q2",
+  "projectName": "Uber",
+  "total": 87,
+  "feedback": "Good",
+  "createdAt": {
+    "$date": "2021-03-09T16:24:48.554Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T16:24:48.554Z"
+  },
+  "__v": 0,
+  "duration": 2
+},{
+  "_id": {
+    "$oid": "6047a16e414a4f427aacd4fc"
+  },
+  "answers": [
+    "20",
+    "25",
+    "25",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "dasari.darshani@nineleaps.com",
+  "empId": "NL-100",
+  "year": "2020",
+  "quarter": "Q3",
+  "projectName": "Uber",
+  "total": 92,
+  "feedback": "Outstanding",
+  "createdAt": {
+    "$date": "2021-03-09T16:25:18.199Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T16:25:18.199Z"
+  },
+  "__v": 0,
+  "duration": 1
+},{
+  "_id": {
+    "$oid": "6047a184414a4f427aacd4fd"
+  },
+  "answers": [
+    "20",
+    "23",
+    "25",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "dasari.darshani@nineleaps.com",
+  "empId": "NL-100",
+  "year": "2020",
+  "quarter": "Q3",
+  "projectName": "Ola",
+  "total": 90,
+  "feedback": "Outstanding",
+  "createdAt": {
+    "$date": "2021-03-09T16:25:40.620Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T16:25:40.620Z"
+  },
+  "__v": 0,
+  "duration": 2
+},{
+  "_id": {
+    "$oid": "6047a483414a4f427aacd505"
+  },
+  "answers": [
+    "20",
+    "23",
+    "25",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "raparthi.archana@nineleaps.com",
+  "empId": "NL-102",
+  "year": "2020",
+  "quarter": "Q1",
+  "projectName": "HR-Team",
+  "total": 90,
+  "feedback": "Outstanding",
+  "createdAt": {
+    "$date": "2021-03-09T16:38:27.548Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T16:38:27.548Z"
+  },
+  "duration": 3,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6047a488414a4f427aacd506"
+  },
+  "answers": [
+    "20",
+    "23",
+    "25",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "raparthi.archana@nineleaps.com",
+  "empId": "NL-102",
+  "year": "2020",
+  "quarter": "Q2",
+  "projectName": "HR-Team",
+  "total": 90,
+  "duration": 3,
+  "feedback": "Outstanding",
+  "createdAt": {
+    "$date": "2021-03-09T16:38:32.921Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T16:38:32.921Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6047a48d414a4f427aacd507"
+  },
+  "answers": [
+    "20",
+    "23",
+    "25",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "raparthi.archana@nineleaps.com",
+  "empId": "NL-102",
+  "year": "2020",
+  "quarter": "Q3",
+  "projectName": "HR-Team",
+  "total": 90,
+  "duration": 3,
+  "feedback": "Outstanding",
+  "createdAt": {
+    "$date": "2021-03-09T16:38:37.544Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T16:38:37.544Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6047a4b3414a4f427aacd508"
+  },
+  "answers": [
+    "20",
+    "23",
+    "20",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "john@nineleaps.com",
+  "empId": "NL-104",
+  "year": "2020",
+  "quarter": "Q3",
+  "projectName": "HR-Team",
+  "total": 85,
+  "duration": 3,
+  "feedback": "Good",
+  "createdAt": {
+    "$date": "2021-03-09T16:39:15.349Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T16:39:15.349Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6047a4b8414a4f427aacd509"
+  },
+  "answers": [
+    "20",
+    "23",
+    "20",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "john@nineleaps.com",
+  "empId": "NL-104",
+  "year": "2020",
+  "quarter": "Q2",
+  "projectName": "HR-Team",
+  "total": 85,
+  "duration": 3,
+  "feedback": "Good",
+  "createdAt": {
+    "$date": "2021-03-09T16:39:20.145Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T16:39:20.145Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6047a4bb414a4f427aacd50a"
+  },
+  "answers": [
+    "20",
+    "23",
+    "20",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "john@nineleaps.com",
+  "empId": "NL-104",
+  "year": "2020",
+  "quarter": "Q1",
+  "projectName": "HR-Team",
+  "total": 85,
+  "duration": 3,
+  "feedback": "Good",
+  "createdAt": {
+    "$date": "2021-03-09T16:39:23.623Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T16:39:23.623Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6047a993414a4f427aacd516"
+  },
+  "answers": [
+    "25",
+    "23",
+    "25",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "poosapati.raju@nineleaps.com",
+  "empId": "NL-101",
+  "year": "2020",
+  "quarter": "Q1",
+  "projectName": "Tesco",
+  "total": 95,
+  "duration": 3,
+  "feedback": "Outstanding",
+  "createdAt": {
+    "$date": "2021-03-09T17:00:03.205Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T17:00:03.205Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6047a9b5414a4f427aacd517"
+  },
+  "answers": [
+    "25",
+    "23",
+    "20",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "poosapati.raju@nineleaps.com",
+  "empId": "NL-101",
+  "year": "2020",
+  "quarter": "Q2",
+  "projectName": "Uber",
+  "total": 90,
+  "duration": 3,
+  "feedback": "Outstanding",
+  "createdAt": {
+    "$date": "2021-03-09T17:00:37.906Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T17:00:37.906Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6047a9d4414a4f427aacd518"
+  },
+  "answers": [
+    "25",
+    "23",
+    "20",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "poosapati.raju@nineleaps.com",
+  "empId": "NL-101",
+  "year": "2020",
+  "quarter": "Q3",
+  "projectName": "Uber",
+  "total": 90,
+  "duration": 1,
+  "feedback": "Outstanding",
+  "createdAt": {
+    "$date": "2021-03-09T17:01:08.222Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T17:01:08.222Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6047a9f2414a4f427aacd519"
+  },
+  "answers": [
+    "25",
+    "25",
+    "20",
+    "22"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "email": "poosapati.raju@nineleaps.com",
+  "empId": "NL-101",
+  "year": "2020",
+  "quarter": "Q3",
+  "projectName": "Ola",
+  "total": 92,
+  "duration": 2,
+  "feedback": "Outstanding",
+  "createdAt": {
+    "$date": "2021-03-09T17:01:38.718Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T17:01:38.718Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60656f98cd5abb4870c2cf2c"
+  },
+  "answers": [
+    15,
+    20,
+    20,
+    25
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "empId": "NL-306",
+  "year": "2020",
+  "quarter": "Q4",
+  "projectName": "Swiggy",
+  "total": 80,
+  "duration": 2,
+  "feedback": "Good job.",
+  "updatedAt": {
+    "$date": "2021-04-01T10:37:13.861Z"
+  },
+  "createdAt": {
+    "$date": "2021-04-01T10:37:13.840Z"
+  }
+}]

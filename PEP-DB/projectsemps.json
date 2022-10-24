@@ -1,0 +1,736 @@
+[{
+  "_id": {
+    "$oid": "60475da4414a4f427aacd4b1"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "60475b12414a4f427aacd4a3"
+  },
+  "empId": {
+    "$oid": "6047515cdc95a52a58f14496"
+  },
+  "year": "2020",
+  "quarter": "Q1",
+  "createdAt": {
+    "$date": "2021-03-09T11:36:04.243Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:36:04.243Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60475db4414a4f427aacd4b2"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "60475b12414a4f427aacd4a3"
+  },
+  "empId": {
+    "$oid": "6047515cdc95a52a58f14496"
+  },
+  "year": "2020",
+  "quarter": "Q2",
+  "createdAt": {
+    "$date": "2021-03-09T11:36:20.539Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:36:20.539Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60475dc7414a4f427aacd4b3"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "60475b12414a4f427aacd4a3"
+  },
+  "empId": {
+    "$oid": "60475174dc95a52a58f14497"
+  },
+  "year": "2020",
+  "quarter": "Q1",
+  "createdAt": {
+    "$date": "2021-03-09T11:36:39.357Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:36:39.357Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60475df7414a4f427aacd4b4"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "60475b12414a4f427aacd4a3"
+  },
+  "empId": {
+    "$oid": "6047522fdc95a52a58f1449b"
+  },
+  "year": "2020",
+  "quarter": "Q2",
+  "createdAt": {
+    "$date": "2021-03-09T11:37:27.964Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:37:27.964Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60475e50414a4f427aacd4b5"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "60475b2f414a4f427aacd4a4"
+  },
+  "empId": {
+    "$oid": "604751b9dc95a52a58f14498"
+  },
+  "year": "2020",
+  "quarter": "Q2",
+  "createdAt": {
+    "$date": "2021-03-09T11:38:56.638Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:38:56.638Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60475e55414a4f427aacd4b6"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "60475b2f414a4f427aacd4a4"
+  },
+  "empId": {
+    "$oid": "604751b9dc95a52a58f14498"
+  },
+  "year": "2020",
+  "quarter": "Q3",
+  "createdAt": {
+    "$date": "2021-03-09T11:39:01.374Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:39:01.374Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60475e63414a4f427aacd4b7"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "60475b2f414a4f427aacd4a4"
+  },
+  "empId": {
+    "$oid": "604751e9dc95a52a58f14499"
+  },
+  "year": "2020",
+  "quarter": "Q2",
+  "createdAt": {
+    "$date": "2021-03-09T11:39:15.680Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:39:15.680Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60475e70414a4f427aacd4b8"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "60475b2f414a4f427aacd4a4"
+  },
+  "empId": {
+    "$oid": "604751e9dc95a52a58f14499"
+  },
+  "year": "2020",
+  "quarter": "Q3",
+  "createdAt": {
+    "$date": "2021-03-09T11:39:28.206Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:39:28.206Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60475eb3414a4f427aacd4b9"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "60475b64414a4f427aacd4a5"
+  },
+  "empId": {
+    "$oid": "60475202dc95a52a58f1449a"
+  },
+  "year": "2020",
+  "quarter": "Q3",
+  "createdAt": {
+    "$date": "2021-03-09T11:40:35.382Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:40:35.382Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60475eca414a4f427aacd4ba"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "60475b64414a4f427aacd4a5"
+  },
+  "empId": {
+    "$oid": "60475174dc95a52a58f14497"
+  },
+  "year": "2020",
+  "quarter": "Q3",
+  "createdAt": {
+    "$date": "2021-03-09T11:40:58.993Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:40:58.993Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60475f13414a4f427aacd4bb"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "60475ba4414a4f427aacd4a6"
+  },
+  "empId": {
+    "$oid": "6047525fdc95a52a58f1449c"
+  },
+  "year": "2020",
+  "quarter": "Q4",
+  "createdAt": {
+    "$date": "2021-03-09T11:42:11.519Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:42:11.519Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60475f6d414a4f427aacd4bd"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "60475ba4414a4f427aacd4a6"
+  },
+  "empId": {
+    "$oid": "60475270dc95a52a58f1449d"
+  },
+  "year": "2021",
+  "quarter": "Q1",
+  "createdAt": {
+    "$date": "2021-03-09T11:43:41.119Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:43:41.119Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60475f8b414a4f427aacd4be"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "60475ba4414a4f427aacd4a6"
+  },
+  "empId": {
+    "$oid": "6047525fdc95a52a58f1449c"
+  },
+  "year": "2021",
+  "quarter": "Q1",
+  "createdAt": {
+    "$date": "2021-03-09T11:44:11.222Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:44:11.222Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60476098414a4f427aacd4bf"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "60475bf1414a4f427aacd4a7"
+  },
+  "empId": {
+    "$oid": "6047515cdc95a52a58f14496"
+  },
+  "year": "2020",
+  "quarter": "Q1",
+  "createdAt": {
+    "$date": "2021-03-09T11:48:40.924Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:48:40.924Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604760d7414a4f427aacd4c0"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "60475bf1414a4f427aacd4a7"
+  },
+  "empId": {
+    "$oid": "604751e9dc95a52a58f14499"
+  },
+  "year": "2020",
+  "quarter": "Q1",
+  "createdAt": {
+    "$date": "2021-03-09T11:49:43.449Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:49:43.449Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60476161414a4f427aacd4c1"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "60475bf1414a4f427aacd4a7"
+  },
+  "empId": {
+    "$oid": "6047525fdc95a52a58f1449c"
+  },
+  "year": "2020",
+  "quarter": "Q2",
+  "createdAt": {
+    "$date": "2021-03-09T11:52:01.923Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:52:01.923Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6047618d414a4f427aacd4c2"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "60475bf1414a4f427aacd4a7"
+  },
+  "empId": {
+    "$oid": "604751b9dc95a52a58f14498"
+  },
+  "year": "2020",
+  "quarter": "Q3",
+  "createdAt": {
+    "$date": "2021-03-09T11:52:45.222Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:52:45.222Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60476198414a4f427aacd4c3"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "60475bf1414a4f427aacd4a7"
+  },
+  "empId": {
+    "$oid": "6047525fdc95a52a58f1449c"
+  },
+  "year": "2020",
+  "quarter": "Q3",
+  "createdAt": {
+    "$date": "2021-03-09T11:52:56.743Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:52:56.743Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604761e2414a4f427aacd4c4"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "60475aa1414a4f427aacd4a2"
+  },
+  "empId": {
+    "$oid": "604751b9dc95a52a58f14498"
+  },
+  "year": "2020",
+  "quarter": "Q4",
+  "createdAt": {
+    "$date": "2021-03-09T11:54:10.663Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:54:10.663Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6047620f414a4f427aacd4c5"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "60475aa1414a4f427aacd4a2"
+  },
+  "empId": {
+    "$oid": "60475202dc95a52a58f1449a"
+  },
+  "year": "2021",
+  "quarter": "Q1",
+  "createdAt": {
+    "$date": "2021-03-09T11:54:55.200Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:54:55.200Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60476584414a4f427aacd4c7"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "604764ee414a4f427aacd4c6"
+  },
+  "empId": {
+    "$oid": "60473bdddc95a52a58f1447c"
+  },
+  "year": "2020",
+  "quarter": "Q1",
+  "createdAt": {
+    "$date": "2021-03-09T12:09:40.180Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T12:09:40.180Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60476588414a4f427aacd4c8"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "604764ee414a4f427aacd4c6"
+  },
+  "empId": {
+    "$oid": "60473bdddc95a52a58f1447c"
+  },
+  "year": "2020",
+  "quarter": "Q2",
+  "createdAt": {
+    "$date": "2021-03-09T12:09:44.378Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T12:09:44.378Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6047658c414a4f427aacd4c9"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "604764ee414a4f427aacd4c6"
+  },
+  "empId": {
+    "$oid": "60473bdddc95a52a58f1447c"
+  },
+  "year": "2020",
+  "quarter": "Q3",
+  "createdAt": {
+    "$date": "2021-03-09T12:09:48.432Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T12:09:48.432Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60476591414a4f427aacd4ca"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "604764ee414a4f427aacd4c6"
+  },
+  "empId": {
+    "$oid": "60473bdddc95a52a58f1447c"
+  },
+  "year": "2020",
+  "quarter": "Q4",
+  "createdAt": {
+    "$date": "2021-03-09T12:09:53.113Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T12:09:53.113Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60476599414a4f427aacd4cb"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "604764ee414a4f427aacd4c6"
+  },
+  "empId": {
+    "$oid": "60473bdddc95a52a58f1447c"
+  },
+  "year": "2021",
+  "quarter": "Q1",
+  "createdAt": {
+    "$date": "2021-03-09T12:10:01.351Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T12:10:01.351Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604765ce414a4f427aacd4cc"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "604764ee414a4f427aacd4c6"
+  },
+  "empId": {
+    "$oid": "60474392dc95a52a58f1448a"
+  },
+  "year": "2020",
+  "quarter": "Q1",
+  "createdAt": {
+    "$date": "2021-03-09T12:10:54.672Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T12:10:54.672Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604765d3414a4f427aacd4cd"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "604764ee414a4f427aacd4c6"
+  },
+  "empId": {
+    "$oid": "60474392dc95a52a58f1448a"
+  },
+  "year": "2020",
+  "quarter": "Q2",
+  "createdAt": {
+    "$date": "2021-03-09T12:10:59.129Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T12:10:59.129Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "604765df414a4f427aacd4ce"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "604764ee414a4f427aacd4c6"
+  },
+  "empId": {
+    "$oid": "60474392dc95a52a58f1448a"
+  },
+  "year": "2020",
+  "quarter": "Q3",
+  "createdAt": {
+    "$date": "2021-03-09T12:11:11.807Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T12:11:11.807Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60476639414a4f427aacd4cf"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "604764ee414a4f427aacd4c6"
+  },
+  "empId": {
+    "$oid": "60474392dc95a52a58f1448a"
+  },
+  "year": "2021",
+  "quarter": "Q1",
+  "createdAt": {
+    "$date": "2021-03-09T12:12:41.650Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T12:12:41.650Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6047a6f4414a4f427aacd50b"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "60475b12414a4f427aacd4a3"
+  },
+  "empId": {
+    "$oid": "60473b90dc95a52a58f1447b"
+  },
+  "year": "2020",
+  "quarter": "Q1",
+  "createdAt": {
+    "$date": "2021-03-09T16:48:52.832Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T16:48:52.832Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6047a727414a4f427aacd50c"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "60475b2f414a4f427aacd4a4"
+  },
+  "empId": {
+    "$oid": "60473b90dc95a52a58f1447b"
+  },
+  "year": "2020",
+  "quarter": "Q2",
+  "createdAt": {
+    "$date": "2021-03-09T16:49:43.416Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T16:49:43.416Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6047a737414a4f427aacd50d"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "60475b2f414a4f427aacd4a4"
+  },
+  "empId": {
+    "$oid": "60473b90dc95a52a58f1447b"
+  },
+  "year": "2020",
+  "quarter": "Q3",
+  "createdAt": {
+    "$date": "2021-03-09T16:49:59.270Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T16:49:59.270Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6047a75e414a4f427aacd50e"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "60475ba4414a4f427aacd4a6"
+  },
+  "empId": {
+    "$oid": "60473b90dc95a52a58f1447b"
+  },
+  "year": "2020",
+  "quarter": "Q4",
+  "createdAt": {
+    "$date": "2021-03-09T16:50:38.269Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T16:50:38.269Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6047a774414a4f427aacd50f"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "60475b64414a4f427aacd4a5"
+  },
+  "empId": {
+    "$oid": "60473b90dc95a52a58f1447b"
+  },
+  "year": "2020",
+  "quarter": "Q3",
+  "createdAt": {
+    "$date": "2021-03-09T16:51:00.888Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T16:51:00.888Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6047a7ee414a4f427aacd510"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "projectId": {
+    "$oid": "60475ba4414a4f427aacd4a6"
+  },
+  "empId": {
+    "$oid": "60473b90dc95a52a58f1447b"
+  },
+  "year": "2021",
+  "quarter": "Q1",
+  "createdAt": {
+    "$date": "2021-03-09T16:53:02.812Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T16:53:02.812Z"
+  },
+  "__v": 0
+}]

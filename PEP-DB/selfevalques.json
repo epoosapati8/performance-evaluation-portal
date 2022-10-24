@@ -1,0 +1,824 @@
+[{
+  "_id": {
+    "$oid": "605993811e9c113674d883e2"
+  },
+  "questions": [
+    {
+      "question": "What was your role in the project?",
+      "mandatory": true,
+      "displayOrder": "1"
+    },
+    {
+      "question": "What are the key features of your project?",
+      "mandatory": true,
+      "displayOrder": "2"
+    },
+    {
+      "question": "What are your most significant achievements and contributions in the past quarter?",
+      "mandatory": true,
+      "displayOrder": "3"
+    },
+    {
+      "question": "How would you rate your performance in the past quarter? Why?",
+      "mandatory": true,
+      "displayOrder": "4"
+    },
+    {
+      "question": "What work are you performing outside the scope of your current role?",
+      "mandatory": false,
+      "displayOrder": "5"
+    },
+    {
+      "question": "How well do you communicate with your team and the client?",
+      "mandatory": true,
+      "displayOrder": "6"
+    },
+    {
+      "question": "What would be ONE thing that could have been done better, by you (as an individual)? What would you change, so that the outcome is different the next time?",
+      "mandatory": false,
+      "displayOrder": "7"
+    },
+    {
+      "question": "Do you consistently deliver your work-related commitments within the time limits?",
+      "mandatory": true,
+      "displayOrder": "8"
+    },
+    {
+      "question": "Are you able to effectively solve problems? What methods do you use to solve them?",
+      "mandatory": true,
+      "displayOrder": "9"
+    },
+    {
+      "question": "Are you able to make effective & informed decisions that are beneficial to you, your team & the organisation.",
+      "mandatory": false,
+      "displayOrder": "10"
+    },
+    {
+      "question": "What goals do you wish you had accomplished since your last evaluation but didn't?",
+      "mandatory": false,
+      "displayOrder": "11"
+    },
+    {
+      "question": "How often do you get your work reviewed by your team members?",
+      "mandatory": true,
+      "displayOrder": "12"
+    },
+    {
+      "question": "What are the new skills you have learnt to improve the work you do?",
+      "mandatory": true,
+      "displayOrder": "13"
+    },
+    {
+      "question": "How efficient is your team according to you (Rate out of 10)?",
+      "mandatory": false,
+      "displayOrder": "14"
+    },
+    {
+      "question": "Mention the recognitions you have received in the past quarter.",
+      "mandatory": false,
+      "displayOrder": "16"
+    },
+    {
+      "question": "List one or two areas or skills that you can improve upon?",
+      "mandatory": true,
+      "displayOrder": "15"
+    }
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "year": "2021",
+  "quarter": "Q1",
+  "startDate": {
+    "$date": "2021-03-01T18:30:00Z"
+  },
+  "endDate": {
+    "$date": "2021-04-18T18:30:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-03-23T07:06:41.021Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-23T07:06:41.021Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "605996021e9c113674d883e6"
+  },
+  "questions": [
+    {
+      "question": "What was your role in the project?",
+      "mandatory": true,
+      "displayOrder": "1"
+    },
+    {
+      "question": "What are the key features of your project?",
+      "mandatory": true,
+      "displayOrder": "2"
+    },
+    {
+      "question": "What are your most significant achievements and contributions in the past quarter?",
+      "mandatory": true,
+      "displayOrder": "3"
+    },
+    {
+      "question": "How would you rate your performance in the past quarter? Why?",
+      "mandatory": true,
+      "displayOrder": "4"
+    },
+    {
+      "question": "What work are you performing outside the scope of your current role?",
+      "mandatory": true,
+      "displayOrder": "5"
+    },
+    {
+      "question": "How well do you communicate with your team and the client?",
+      "mandatory": true,
+      "displayOrder": "6"
+    },
+    {
+      "question": "What would be ONE thing that could have been done better, by you (as an individual)? What would you change, so that the outcome is different the next time?",
+      "mandatory": true,
+      "displayOrder": "7"
+    },
+    {
+      "question": "Do you consistently deliver your work-related commitments within the time limits?",
+      "mandatory": true,
+      "displayOrder": "8"
+    },
+    {
+      "question": "Are you able to effectively solve problems? What methods do you use to solve them?",
+      "mandatory": true,
+      "displayOrder": "9"
+    },
+    {
+      "question": "Are you able to make effective & informed decisions that are beneficial to you, your team & the organisation.",
+      "mandatory": true,
+      "displayOrder": "10"
+    },
+    {
+      "question": "What goals do you wish you had accomplished since your last evaluation but didn't?",
+      "mandatory": true,
+      "displayOrder": "11"
+    },
+    {
+      "question": "How often do you get your work reviewed by your team members?",
+      "mandatory": true,
+      "displayOrder": "12"
+    },
+    {
+      "question": "What are the new skills you have learnt to improve the work you do?",
+      "mandatory": true,
+      "displayOrder": "13"
+    },
+    {
+      "question": "How efficient is your team according to you (Rate out of 10)?",
+      "mandatory": true,
+      "displayOrder": "14"
+    },
+    {
+      "question": "List one or two areas or skills that you can improve upon?",
+      "mandatory": true,
+      "displayOrder": "15"
+    },
+    {
+      "question": "Mention the recognitions you have received in the past quarter.",
+      "mandatory": true,
+      "displayOrder": "16"
+    }
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "year": "2020",
+  "quarter": "Q1",
+  "startDate": {
+    "$date": "2020-03-03T18:30:00Z"
+  },
+  "endDate": {
+    "$date": "2020-03-15T18:30:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-03-23T07:17:22.565Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-23T07:17:22.565Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "605996351e9c113674d883e7"
+  },
+  "questions": [
+    {
+      "question": "What was your role in the project?",
+      "mandatory": true,
+      "displayOrder": "1"
+    },
+    {
+      "question": "What are the key features of your project?",
+      "mandatory": true,
+      "displayOrder": "2"
+    },
+    {
+      "question": "What are your most significant achievements and contributions in the past quarter?",
+      "mandatory": true,
+      "displayOrder": "3"
+    },
+    {
+      "question": "How would you rate your performance in the past quarter? Why?",
+      "mandatory": true,
+      "displayOrder": "4"
+    },
+    {
+      "question": "What work are you performing outside the scope of your current role?",
+      "mandatory": true,
+      "displayOrder": "5"
+    },
+    {
+      "question": "How well do you communicate with your team and the client?",
+      "mandatory": true,
+      "displayOrder": "6"
+    },
+    {
+      "question": "What would be ONE thing that could have been done better, by you (as an individual)? What would you change, so that the outcome is different the next time?",
+      "mandatory": true,
+      "displayOrder": "7"
+    },
+    {
+      "question": "Do you consistently deliver your work-related commitments within the time limits?",
+      "mandatory": true,
+      "displayOrder": "8"
+    },
+    {
+      "question": "Are you able to effectively solve problems? What methods do you use to solve them?",
+      "mandatory": true,
+      "displayOrder": "9"
+    },
+    {
+      "question": "Are you able to make effective & informed decisions that are beneficial to you, your team & the organisation.",
+      "mandatory": true,
+      "displayOrder": "10"
+    },
+    {
+      "question": "What goals do you wish you had accomplished since your last evaluation but didn't?",
+      "mandatory": true,
+      "displayOrder": "11"
+    },
+    {
+      "question": "How often do you get your work reviewed by your team members?",
+      "mandatory": true,
+      "displayOrder": "12"
+    },
+    {
+      "question": "What are the new skills you have learnt to improve the work you do?",
+      "mandatory": true,
+      "displayOrder": "13"
+    },
+    {
+      "question": "How efficient is your team according to you (Rate out of 10)?",
+      "mandatory": true,
+      "displayOrder": "14"
+    },
+    {
+      "question": "List one or two areas or skills that you can improve upon?",
+      "mandatory": true,
+      "displayOrder": "15"
+    },
+    {
+      "question": "Mention the recognitions you have received in the past quarter.",
+      "mandatory": true,
+      "displayOrder": "16"
+    }
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "year": "2020",
+  "quarter": "Q2",
+  "startDate": {
+    "$date": "2020-06-04T18:30:00Z"
+  },
+  "endDate": {
+    "$date": "2020-06-15T18:30:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-03-23T07:18:13.091Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-23T07:18:13.091Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "605996771e9c113674d883e8"
+  },
+  "questions": [
+    {
+      "question": "What was your role in the project?",
+      "mandatory": true,
+      "displayOrder": "1"
+    },
+    {
+      "question": "What are the key features of your project?",
+      "mandatory": true,
+      "displayOrder": "2"
+    },
+    {
+      "question": "What are your most significant achievements and contributions in the past quarter?",
+      "mandatory": true,
+      "displayOrder": "3"
+    },
+    {
+      "question": "How would you rate your performance in the past quarter? Why?",
+      "mandatory": true,
+      "displayOrder": "4"
+    },
+    {
+      "question": "What work are you performing outside the scope of your current role?",
+      "mandatory": true,
+      "displayOrder": "5"
+    },
+    {
+      "question": "How well do you communicate with your team and the client?",
+      "mandatory": true,
+      "displayOrder": "6"
+    },
+    {
+      "question": "What would be ONE thing that could have been done better, by you (as an individual)? What would you change, so that the outcome is different the next time?",
+      "mandatory": true,
+      "displayOrder": "7"
+    },
+    {
+      "question": "Do you consistently deliver your work-related commitments within the time limits?",
+      "mandatory": true,
+      "displayOrder": "8"
+    },
+    {
+      "question": "Are you able to effectively solve problems? What methods do you use to solve them?",
+      "mandatory": true,
+      "displayOrder": "9"
+    },
+    {
+      "question": "Are you able to make effective & informed decisions that are beneficial to you, your team & the organisation.",
+      "mandatory": true,
+      "displayOrder": "10"
+    },
+    {
+      "question": "What goals do you wish you had accomplished since your last evaluation but didn't?",
+      "mandatory": true,
+      "displayOrder": "11"
+    },
+    {
+      "question": "How often do you get your work reviewed by your team members?",
+      "mandatory": true,
+      "displayOrder": "12"
+    },
+    {
+      "question": "What are the new skills you have learnt to improve the work you do?",
+      "mandatory": true,
+      "displayOrder": "13"
+    },
+    {
+      "question": "How efficient is your team according to you (Rate out of 10)?",
+      "mandatory": true,
+      "displayOrder": "14"
+    },
+    {
+      "question": "List one or two areas or skills that you can improve upon?",
+      "mandatory": true,
+      "displayOrder": "15"
+    },
+    {
+      "question": "Mention the recognitions you have received in the past quarter.",
+      "mandatory": true,
+      "displayOrder": "16"
+    }
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "year": "2020",
+  "quarter": "Q3",
+  "startDate": {
+    "$date": "2020-09-04T18:30:00Z"
+  },
+  "endDate": {
+    "$date": "2020-09-15T18:30:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-03-23T07:19:19.015Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-23T07:19:19.015Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6059969a1e9c113674d883e9"
+  },
+  "questions": [
+    {
+      "question": "What was your role in the project?",
+      "mandatory": true,
+      "displayOrder": "1"
+    },
+    {
+      "question": "What are the key features of your project?",
+      "mandatory": true,
+      "displayOrder": "2"
+    },
+    {
+      "question": "What are your most significant achievements and contributions in the past quarter?",
+      "mandatory": true,
+      "displayOrder": "3"
+    },
+    {
+      "question": "How would you rate your performance in the past quarter? Why?",
+      "mandatory": true,
+      "displayOrder": "4"
+    },
+    {
+      "question": "What work are you performing outside the scope of your current role?",
+      "mandatory": true,
+      "displayOrder": "5"
+    },
+    {
+      "question": "How well do you communicate with your team and the client?",
+      "mandatory": true,
+      "displayOrder": "6"
+    },
+    {
+      "question": "What would be ONE thing that could have been done better, by you (as an individual)? What would you change, so that the outcome is different the next time?",
+      "mandatory": true,
+      "displayOrder": "7"
+    },
+    {
+      "question": "Do you consistently deliver your work-related commitments within the time limits?",
+      "mandatory": true,
+      "displayOrder": "8"
+    },
+    {
+      "question": "Are you able to effectively solve problems? What methods do you use to solve them?",
+      "mandatory": true,
+      "displayOrder": "9"
+    },
+    {
+      "question": "Are you able to make effective & informed decisions that are beneficial to you, your team & the organisation.",
+      "mandatory": true,
+      "displayOrder": "10"
+    },
+    {
+      "question": "What goals do you wish you had accomplished since your last evaluation but didn't?",
+      "mandatory": true,
+      "displayOrder": "11"
+    },
+    {
+      "question": "How often do you get your work reviewed by your team members?",
+      "mandatory": true,
+      "displayOrder": "12"
+    },
+    {
+      "question": "What are the new skills you have learnt to improve the work you do?",
+      "mandatory": true,
+      "displayOrder": "13"
+    },
+    {
+      "question": "How efficient is your team according to you (Rate out of 10)?",
+      "mandatory": true,
+      "displayOrder": "14"
+    },
+    {
+      "question": "List one or two areas or skills that you can improve upon?",
+      "mandatory": true,
+      "displayOrder": "15"
+    },
+    {
+      "question": "Mention the recognitions you have received in the past quarter.",
+      "mandatory": true,
+      "displayOrder": "16"
+    }
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "year": "2020",
+  "quarter": "Q4",
+  "startDate": {
+    "$date": "2020-12-04T18:30:00Z"
+  },
+  "endDate": {
+    "$date": "2020-12-15T18:30:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-03-23T07:19:54.013Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-23T07:19:54.013Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "605da209776bc54028591b3d"
+  },
+  "questions": [
+    {
+      "question": "What was your role in the project?",
+      "mandatory": false,
+      "displayOrder": "1"
+    },
+    {
+      "question": "What are the key features of your project?",
+      "mandatory": true,
+      "displayOrder": "2"
+    },
+    {
+      "question": "What are your most significant achievements and contributions in the past quarter?",
+      "mandatory": true,
+      "displayOrder": "3"
+    },
+    {
+      "question": "How would you rate your performance in the past quarter? Why?",
+      "mandatory": true,
+      "displayOrder": "4"
+    },
+    {
+      "question": "What work are you performing outside the scope of your current role?",
+      "mandatory": true,
+      "displayOrder": "5"
+    },
+    {
+      "question": "How well do you communicate with your team and the client?",
+      "mandatory": true,
+      "displayOrder": "6"
+    },
+    {
+      "question": "What would be ONE thing that could have been done better, by you (as an individual)? What would you change, so that the outcome is different the next time?",
+      "mandatory": true,
+      "displayOrder": "7"
+    },
+    {
+      "question": "Do you consistently deliver your work-related commitments within the time limits?",
+      "mandatory": true,
+      "displayOrder": "8"
+    },
+    {
+      "question": "Are you able to effectively solve problems? What methods do you use to solve them?",
+      "mandatory": true,
+      "displayOrder": "9"
+    },
+    {
+      "question": "Are you able to make effective & informed decisions that are beneficial to you, your team & the organisation.",
+      "mandatory": true,
+      "displayOrder": "10"
+    },
+    {
+      "question": "What goals do you wish you had accomplished since your last evaluation but didn't?",
+      "mandatory": true,
+      "displayOrder": "11"
+    },
+    {
+      "question": "How often do you get your work reviewed by your team members?",
+      "mandatory": true,
+      "displayOrder": "12"
+    },
+    {
+      "question": "What are the new skills you have learnt to improve the work you do?",
+      "mandatory": true,
+      "displayOrder": "13"
+    },
+    {
+      "question": "How efficient is your team according to you (Rate out of 10)?",
+      "mandatory": true,
+      "displayOrder": "14"
+    },
+    {
+      "question": "List one or two areas or skills that you can improve upon?",
+      "mandatory": true,
+      "displayOrder": "15"
+    },
+    {
+      "question": "Mention the recognitions you have received in the past quarter.",
+      "mandatory": true,
+      "displayOrder": "16"
+    }
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "year": "2022",
+  "quarter": "Q1",
+  "startDate": {
+    "$date": "2022-04-04T18:30:00Z"
+  },
+  "endDate": {
+    "$date": "2022-04-10T18:30:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-03-26T08:57:45.772Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-29T04:45:28.914Z"
+  },
+  "__v": 3
+},{
+  "_id": {
+    "$oid": "605da28d776bc54028591b3e"
+  },
+  "questions": [
+    {
+      "question": "What was your role in the project?",
+      "mandatory": true,
+      "displayOrder": "1"
+    },
+    {
+      "question": "What are the key features of your project?",
+      "mandatory": true,
+      "displayOrder": "2"
+    },
+    {
+      "question": "What are your most significant achievements and contributions in the past quarter?",
+      "mandatory": true,
+      "displayOrder": "3"
+    },
+    {
+      "question": "How would you rate your performance in the past quarter? Why?",
+      "mandatory": true,
+      "displayOrder": "4"
+    },
+    {
+      "question": "What work are you performing outside the scope of your current role?",
+      "mandatory": true,
+      "displayOrder": "5"
+    },
+    {
+      "question": "How well do you communicate with your team and the client?",
+      "mandatory": true,
+      "displayOrder": "6"
+    },
+    {
+      "question": "What would be ONE thing that could have been done better, by you (as an individual)? What would you change, so that the outcome is different the next time?",
+      "mandatory": true,
+      "displayOrder": "7"
+    },
+    {
+      "question": "Do you consistently deliver your work-related commitments within the time limits?",
+      "mandatory": true,
+      "displayOrder": "8"
+    },
+    {
+      "question": "Are you able to effectively solve problems? What methods do you use to solve them?",
+      "mandatory": true,
+      "displayOrder": "9"
+    },
+    {
+      "question": "Are you able to make effective & informed decisions that are beneficial to you, your team & the organisation.",
+      "mandatory": true,
+      "displayOrder": "10"
+    },
+    {
+      "question": "What goals do you wish you had accomplished since your last evaluation but didn't?",
+      "mandatory": true,
+      "displayOrder": "11"
+    },
+    {
+      "question": "How often do you get your work reviewed by your team members?",
+      "mandatory": true,
+      "displayOrder": "12"
+    },
+    {
+      "question": "What are the new skills you have learnt to improve the work you do?",
+      "mandatory": true,
+      "displayOrder": "13"
+    },
+    {
+      "question": "How efficient is your team according to you (Rate out of 10)?",
+      "mandatory": true,
+      "displayOrder": "14"
+    },
+    {
+      "question": "List one or two areas or skills that you can improve upon?",
+      "mandatory": true,
+      "displayOrder": "15"
+    },
+    {
+      "question": "Mention the recognitions you have received in the past quarter.",
+      "mandatory": true,
+      "displayOrder": "16"
+    }
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "year": "2022",
+  "quarter": "Q3",
+  "startDate": {
+    "$date": "2022-09-19T18:30:00Z"
+  },
+  "endDate": {
+    "$date": "2022-09-25T18:30:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-03-26T08:59:57.405Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-26T08:59:57.405Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "605da2de776bc54028591b3f"
+  },
+  "questions": [
+    {
+      "question": "What was your role in the project?",
+      "mandatory": true,
+      "displayOrder": "1"
+    },
+    {
+      "question": "What are the key features of your project?",
+      "mandatory": true,
+      "displayOrder": "2"
+    },
+    {
+      "question": "What are your most significant achievements and contributions in the past quarter?",
+      "mandatory": true,
+      "displayOrder": "3"
+    },
+    {
+      "question": "How would you rate your performance in the past quarter? Why?",
+      "mandatory": true,
+      "displayOrder": "4"
+    },
+    {
+      "question": "What work are you performing outside the scope of your current role?",
+      "mandatory": true,
+      "displayOrder": "5"
+    },
+    {
+      "question": "How well do you communicate with your team and the client?",
+      "mandatory": true,
+      "displayOrder": "6"
+    },
+    {
+      "question": "What would be ONE thing that could have been done better, by you (as an individual)? What would you change, so that the outcome is different the next time?",
+      "mandatory": true,
+      "displayOrder": "7"
+    },
+    {
+      "question": "Do you consistently deliver your work-related commitments within the time limits?",
+      "mandatory": true,
+      "displayOrder": "8"
+    },
+    {
+      "question": "Are you able to effectively solve problems? What methods do you use to solve them?",
+      "mandatory": true,
+      "displayOrder": "9"
+    },
+    {
+      "question": "Are you able to make effective & informed decisions that are beneficial to you, your team & the organisation.",
+      "mandatory": true,
+      "displayOrder": "10"
+    },
+    {
+      "question": "What goals do you wish you had accomplished since your last evaluation but didn't?",
+      "mandatory": true,
+      "displayOrder": "11"
+    },
+    {
+      "question": "How often do you get your work reviewed by your team members?",
+      "mandatory": true,
+      "displayOrder": "12"
+    },
+    {
+      "question": "What are the new skills you have learnt to improve the work you do?",
+      "mandatory": true,
+      "displayOrder": "13"
+    },
+    {
+      "question": "How efficient is your team according to you (Rate out of 10)?",
+      "mandatory": true,
+      "displayOrder": "14"
+    },
+    {
+      "question": "List one or two areas or skills that you can improve upon?",
+      "mandatory": true,
+      "displayOrder": "15"
+    },
+    {
+      "question": "Mention the recognitions you have received in the past quarter.",
+      "mandatory": true,
+      "displayOrder": "16"
+    }
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "quarter": "Q1",
+  "year": "2023",
+  "updatedAt": {
+    "$date": "2021-03-26T10:40:08.131Z"
+  },
+  "createdAt": {
+    "$date": "2021-03-26T10:26:43.848Z"
+  },
+  "endDate": {
+    "$date": "2021-03-30T18:30:00Z"
+  },
+  "startDate": {
+    "$date": "2021-03-27T18:30:00Z"
+  }
+}]

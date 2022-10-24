@@ -1,0 +1,109 @@
+[{
+  "_id": {
+    "$oid": "60475d12414a4f427aacd4ad"
+  },
+  "questions": [
+    "Effort",
+    "Quality of deliverables",
+    "Problem Solving Skills",
+    "Ways of Working"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "year": "2020",
+  "quarter": "Q4",
+  "startDate": {
+    "$date": "2020-12-19T18:30:00Z"
+  },
+  "endDate": {
+    "$date": "2021-04-28T00:00:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-03-09T11:33:38.059Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:33:38.059Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60475d37414a4f427aacd4ae"
+  },
+  "questions": [
+    "Effort",
+    "Quality of deliverables",
+    "Problem Solving Skills",
+    "Ways of Working"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "year": "2020",
+  "quarter": "Q3",
+  "startDate": {
+    "$date": "2020-09-19T18:30:00Z"
+  },
+  "endDate": {
+    "$date": "2020-09-28T18:30:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-03-09T11:34:15.300Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:34:15.300Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60475d49414a4f427aacd4af"
+  },
+  "questions": [
+    "Effort",
+    "Quality of deliverables",
+    "Problem Solving Skills",
+    "Ways of Working"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "year": "2020",
+  "quarter": "Q2",
+  "startDate": {
+    "$date": "2020-06-16T18:30:00Z"
+  },
+  "endDate": {
+    "$date": "2020-06-28T18:30:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-03-09T11:34:33.083Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:34:33.083Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60475d54414a4f427aacd4b0"
+  },
+  "questions": [
+    "Effort",
+    "Quality of deliverables",
+    "Problem Solving Skills",
+    "Ways of Working"
+  ],
+  "isActive": true,
+  "isDeleted": false,
+  "year": "2020",
+  "quarter": "Q1",
+  "startDate": {
+    "$date": "2020-03-16T18:30:00Z"
+  },
+  "endDate": {
+    "$date": "2020-03-28T18:30:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-03-09T11:34:44.339Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T11:34:44.339Z"
+  },
+  "__v": 0
+}]

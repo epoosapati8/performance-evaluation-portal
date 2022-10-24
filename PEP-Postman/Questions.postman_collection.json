@@ -1,0 +1,288 @@
+{
+	"info": {
+		"_postman_id": "f61bbebd-c398-4ec2-8986-d1b74c2154ef",
+		"name": "Questions",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Self Eval Questions",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{auth_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quarter\": \"Q4\",\r\n    \"year\": \"2020\",\r\n    \"questions\": [\r\n        {\r\n            \"question\": \"What was your role in the project?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"1\"\r\n        },\r\n        {\r\n            \"question\": \"What are the key features of your project?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"2\"\r\n        },\r\n        {\r\n            \"question\": \"What are your most significant achievements and contributions in the past quarter?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"3\"\r\n        },\r\n        {\r\n            \"question\": \"How would you rate your performance in the past quarter? Why?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"4\"\r\n        },\r\n        {\r\n            \"question\": \"What work are you performing outside the scope of your current role?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"5\"\r\n        },\r\n        {\r\n            \"question\": \"How well do you communicate with your team and the client?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"6\"\r\n        },\r\n        {\r\n            \"question\": \"What would be ONE thing that could have been done better, by you (as an individual)? What would you change, so that the outcome is different the next time?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"7\"\r\n        },\r\n        {\r\n            \"question\": \"Do you consistently deliver your work-related commitments within the time limits?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"8\"\r\n        },\r\n        {\r\n            \"question\": \"Are you able to effectively solve problems? What methods do you use to solve them?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"9\"\r\n        },\r\n        {\r\n            \"question\": \"Are you able to make effective & informed decisions that are beneficial to you, your team & the organisation.\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"10\"\r\n        },\r\n        {\r\n            \"question\": \"What goals do you wish you had accomplished since your last evaluation but didn't?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"11\"\r\n        },\r\n        {\r\n            \"question\": \"How often do you get your work reviewed by your team members?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"12\"\r\n        },\r\n        {\r\n            \"question\": \"What are the new skills you have learnt to improve the work you do?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"13\"\r\n        },\r\n        {\r\n            \"question\": \"How efficient is your team according to you (Rate out of 10)?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"14\"\r\n        },\r\n        {\r\n            \"question\": \"List one or two areas or skills that you can improve upon?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"15\"\r\n        },\r\n        {\r\n            \"question\": \"Mention the recognitions you have received in the past quarter.\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"16\"\r\n        }\r\n    ],\r\n    \"startDate\": \"05/12/2020\",\r\n    \"endDate\": \"15/12/2020\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/selfEvalQues/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"selfEvalQues",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Self Eval Ques",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{auth_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/selfEvalQues/2021/Q1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"selfEvalQues",
+						"2021",
+						"Q1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Self Eval Status",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{auth_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/selfEvalQues/status/2020/Q4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"selfEvalQues",
+						"status",
+						"2020",
+						"Q4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Self Eval Ques",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{auth_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quarter\": \"Q1\",\r\n    \"year\": \"2023\",\r\n    \"startDate\": \"28/03/2021\",\r\n    \"endDate\": \"30/03/2021\",\r\n    \"questions\": [\r\n        {\r\n            \"question\": \"What was your role in the project?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"1\"\r\n        },\r\n        {\r\n            \"question\": \"What are the key features of your project?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"2\"\r\n        },\r\n        {\r\n            \"question\": \"What are your most significant achievements and contributions in the past quarter?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"3\"\r\n        },\r\n        {\r\n            \"question\": \"How would you rate your performance in the past quarter? Why?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"4\"\r\n        },\r\n        {\r\n            \"question\": \"What work are you performing outside the scope of your current role?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"5\"\r\n        },\r\n        {\r\n            \"question\": \"How well do you communicate with your team and the client?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"6\"\r\n        },\r\n        {\r\n            \"question\": \"What would be ONE thing that could have been done better, by you (as an individual)? What would you change, so that the outcome is different the next time?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"7\"\r\n        },\r\n        {\r\n            \"question\": \"Do you consistently deliver your work-related commitments within the time limits?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"8\"\r\n        },\r\n        {\r\n            \"question\": \"Are you able to effectively solve problems? What methods do you use to solve them?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"9\"\r\n        },\r\n        {\r\n            \"question\": \"Are you able to make effective & informed decisions that are beneficial to you, your team & the organisation.\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"10\"\r\n        },\r\n        {\r\n            \"question\": \"What goals do you wish you had accomplished since your last evaluation but didn't?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"11\"\r\n        },\r\n        {\r\n            \"question\": \"How often do you get your work reviewed by your team members?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"12\"\r\n        },\r\n        {\r\n            \"question\": \"What are the new skills you have learnt to improve the work you do?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"13\"\r\n        },\r\n        {\r\n            \"question\": \"How efficient is your team according to you (Rate out of 10)?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"14\"\r\n        },\r\n        {\r\n            \"question\": \"List one or two areas or skills that you can improve upon?\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"15\"\r\n        },\r\n        {\r\n            \"question\": \"Mention the recognitions you have received in the past quarter.\",\r\n            \"mandatory\": true,\r\n            \"displayOrder\": \"16\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/selfEvalQues/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"selfEvalQues",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Score Sheet Questions",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{auth_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quarter\":\"Q1\",\r\n    \"year\":\"2020\",\r\n    \"questions\": [\"Effort\", \"Quality of deliverables\", \"Problem Solving Skills\", \"Ways of Working\"],\r\n    \"startDate\":\"17/03/2020\",\r\n    \"endDate\":\"28/03/2020\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/scoreSheetQues/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"scoreSheetQues",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Score Sheet Ques",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{auth_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/scoreSheetQues/2020/Q1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"scoreSheetQues",
+						"2020",
+						"Q1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Scoresheet Status",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{auth_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/scoreSheetQues/status/2020/Q4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"scoreSheetQues",
+						"status",
+						"2020",
+						"Q4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Score Sheet Ques",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/scoreSheetQues/6013d3a2cd5f8419b09dd24f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"scoreSheetQues",
+						"6013d3a2cd5f8419b09dd24f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

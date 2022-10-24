@@ -1,0 +1,253 @@
+[{
+  "_id": {
+    "$oid": "60473b15dc95a52a58f1447a"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "email": "dasari.darshani@nineleaps.com",
+  "details": {
+    "$oid": "604736b322d2232539df0355"
+  },
+  "password": "$2b$10$l62t5TyS4WqNr118YR9SN.qOJjyhRpLaUQELhEaa01h.bGwzBAQlW",
+  "createdAt": {
+    "$date": "2021-03-09T09:08:37.629Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T09:08:37.629Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60473c7edc95a52a58f1447e"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "email": "poosapati.raju@nineleaps.com",
+  "details": {
+    "$oid": "60473b90dc95a52a58f1447b"
+  },
+  "password": "$2b$10$p1jy8ZLAGVMLJ2MWtqyryuOrL9uRzpN3PZBMrTpEwRhCoGHhJ4Vg6",
+  "createdAt": {
+    "$date": "2021-03-09T09:14:38.963Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T09:14:38.963Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60473cb7dc95a52a58f1447f"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "email": "raparthi.archana@nineleaps.com",
+  "details": {
+    "$oid": "60473bdddc95a52a58f1447c"
+  },
+  "password": "$2b$10$wPItwkFN8UuV7ywX3GkMiO42NwEbjALWiuTgl3aU7DD29xBS03y3u",
+  "createdAt": {
+    "$date": "2021-03-09T09:15:35.281Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T09:15:35.281Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60473cdddc95a52a58f14480"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "email": "vikash.agarwal@nineleaps.com",
+  "details": {
+    "$oid": "60473c2adc95a52a58f1447d"
+  },
+  "password": "$2b$10$kt3GSW2bE/5l5DHB/G3W2eDX93nh1XurnvxiqMlvwmYREXztT6Wgi",
+  "createdAt": {
+    "$date": "2021-03-09T09:16:13.269Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-09T09:16:13.269Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60488a486f66071eec1fa484"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "email": "john@nineleaps.com",
+  "details": {
+    "$oid": "60474392dc95a52a58f1448a"
+  },
+  "password": "$2b$10$3GPr9/iW4mMEOR7RSky9WuwaDos/fCSPi51y4HG7XT3UD8hNR/u7C",
+  "createdAt": {
+    "$date": "2021-03-10T08:58:48.350Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-10T09:01:16.017Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6076a017372ea5504093bed8"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "email": "carol@nineleaps.com",
+  "details": {
+    "$oid": "604743d2dc95a52a58f1448b"
+  },
+  "password": "$2b$10$dVq6urGIFp6DhbgCawiKo.JX6T1aD3Q1b7UXc.AyhZu8.mTdWM.Z.",
+  "createdAt": {
+    "$date": "2021-04-14T07:56:07.786Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-14T07:56:07.786Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6076a02e372ea5504093bed9"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "email": "bella@nineleaps.com",
+  "details": {
+    "$oid": "6047515cdc95a52a58f14496"
+  },
+  "password": "$2b$10$ILj3Bkc5zUYnaZucmUjoB.KV3l6ROosP8uvG69YfhbYvTDuCVNg6.",
+  "createdAt": {
+    "$date": "2021-04-14T07:56:30.444Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-14T07:56:30.444Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6076a043372ea5504093beda"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "email": "susan@nineleaps.com",
+  "details": {
+    "$oid": "60475174dc95a52a58f14497"
+  },
+  "password": "$2b$10$/lEd3v6w/jpIg9gm3MmykeOk2T3gMI.tm8j6zguHJio9UuCuhDF6K",
+  "createdAt": {
+    "$date": "2021-04-14T07:56:51.136Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-14T07:56:51.136Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6076a055372ea5504093bedb"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "email": "sita@nineleaps.com",
+  "details": {
+    "$oid": "604751b9dc95a52a58f14498"
+  },
+  "password": "$2b$10$r6TOfbw6DqpakXPUCkEx1.V7d5HckmO2QJP.CfYctK.E4AlP4M7CK",
+  "createdAt": {
+    "$date": "2021-04-14T07:57:09.651Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-14T07:57:09.651Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6076a07b372ea5504093bedc"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "email": "geeta@nineleaps.com",
+  "details": {
+    "$oid": "604751e9dc95a52a58f14499"
+  },
+  "password": "$2b$10$8QVfi9P5oeQaP1t.ZSlyF.NoGRJj1/wMrWPG12gBwh9EZF.PS8/8O",
+  "createdAt": {
+    "$date": "2021-04-14T07:57:47.083Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-14T07:57:47.083Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6076a091372ea5504093bedd"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "email": "deepak@nineleaps.com",
+  "details": {
+    "$oid": "60475202dc95a52a58f1449a"
+  },
+  "password": "$2b$10$vn5opPSPGxhKqk08.Q.EwOVb38Ena2SmsX2uzu3ndVkyB7QuUgxh6",
+  "createdAt": {
+    "$date": "2021-04-14T07:58:09.652Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-14T07:58:09.652Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6076a0a5372ea5504093bede"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "email": "krishna@nineleaps.com",
+  "details": {
+    "$oid": "6047522fdc95a52a58f1449b"
+  },
+  "password": "$2b$10$U1bJCrVKeZaGN9bs8549s.gR6.aKOpWTkWMzhkgWU3BaxlZsDo0nO",
+  "createdAt": {
+    "$date": "2021-04-14T07:58:29.833Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-14T07:58:29.833Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6076a0bc372ea5504093bedf"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "email": "kalyan@nineleaps.com",
+  "details": {
+    "$oid": "6047525fdc95a52a58f1449c"
+  },
+  "password": "$2b$10$WmkdollVRFJdWW5DjyadkO0iBy.MDvgYyPr0mzxyGIGh01dbBpnHK",
+  "createdAt": {
+    "$date": "2021-04-14T07:58:52.225Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-14T07:58:52.225Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6076a0dc372ea5504093bee0"
+  },
+  "isActive": true,
+  "isDeleted": false,
+  "email": "pavan@nineleaps.com",
+  "details": {
+    "$oid": "60475270dc95a52a58f1449d"
+  },
+  "password": "$2b$10$6uK203e1gT3Ie9k0oYQun.mMRh1zfczNQJrpVqi1mwzlzUOyqyyKK",
+  "createdAt": {
+    "$date": "2021-04-14T07:59:24.398Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-14T07:59:24.398Z"
+  },
+  "__v": 0
+}]
