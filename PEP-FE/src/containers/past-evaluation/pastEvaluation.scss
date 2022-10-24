@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+
+.past-evaluation-page {
+  & .past-evaluation-container {
+    height: 100%;
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 1.5rem;
+    margin-top: 13vh;
+    font-weight: lighter;
+  }
+
+  & .score-sheet-heading {
+    text-align: center;
+    display: inline-block;
+    margin-left: 16vw;
+    margin-right: 7vw;
+  }
+
+  & .self-assessment-heading {
+    text-align: center;
+  }
+
+  & .employee-name {
+    font-size: 1rem;
+    text-align: end;
+    margin-bottom: 2vh;
+  }
+
+  & .label-primary {
+    background-color: #eceeeb;
+    border-radius: 0.25em;
+    height: auto;
+    padding: 0.5vh 1vh 1vh 1vh;
+  }
+
+  .rmROrates {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  & .form-row {
+    margin-left: 15vw;
+  }
+
+  .self-assessment-heading,
+  .score-sheet-heading {
+    text-align: center;
+  }
+
+  & .project {
+    border: 1px solid white;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: 0px 5px 10px;
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    display: contents;
+
+    &:focus {
+      background-color: #005b96;
+      outline: none;
+    }
+  }
+
+  & .btn {
+    background-color: #005b96;
+  }
+
+  & .dropdown-menu {
+    min-width: 0rem !important;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+
+  & .dropdown-toggle {
+    width: 83px;
+    overflow-x: hidden;
+  }
+
+  & .submit-button {
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 1rem;
+    background-color: #005b96;
+    border: 1px solid white;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0px 5px 10px;
+    margin-top: 1vw;
+    margin-bottom: 5vw;
+    margin-left: 2vw;
+    height: 50px;
+    width: 150px;
+    &:hover {
+      background-color: #243b79;
+    }
+    &:focus {
+      background-color: #005b96;
+      outline: none;
+    }
+  }
+
+  @media only screen and (max-width: 760px) {
+    .past-evaluation-container {
+      margin-top: 20vh;
+    }
+
+    .form-row {
+      margin-left: 0vw;
+    }
+
+    .dropdown-toggle {
+      float: right;
+    }
+  }
+
+  @media only screen and (min-width: 761px) and (max-width: 1024px) {
+    .form-row {
+      margin-left: 20vw;
+    }
+
+    .score-sheet-heading {
+      text-align: center;
+      display: inline-block;
+      margin-left: 2vw;
+      margin-right: 7vw;
+    }
+
+    .dropdown-toggle {
+      float: right;
+    }
+  }
+
+  @media only screen and (max-height: 600px) {
+    .past-evaluation-container {
+      margin-top: 20vh;
+    }
+
+    .employee-name-column {
+      margin-top: 5vh;
+      padding-right: 0%;
+    }
+
+    .dropdown-toggle {
+      float: right;
+    }
+  }
+
+  @media only screen and (min-height: 854px) and (max-height: 1300px) {
+    .past-evaluation-container {
+      margin-top: 10vh !important;
+    }
+  }
+}

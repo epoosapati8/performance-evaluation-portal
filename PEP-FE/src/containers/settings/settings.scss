@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+.settings-page {
+  & .settings-container {
+    height: 100%;
+    padding-left: 15vw;
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
+
+  & .settings-heading {
+    margin-top: 20vh;
+    margin-bottom: 6vh;
+    text-align: center;
+  }
+
+  & .settings-fields {
+    max-width: 45vw;
+    margin-top: 1vh;
+  }
+
+  & .settings-column {
+    margin-top: 4vh;
+  }
+
+  & .form1 {
+    width: 80%;
+    margin: 5vh auto;
+    position: relative;
+  }
+
+  & .alert.oldpassword-error {
+    text-align: center;
+    font-size: medium;
+    position: absolute;
+    top: -4vh;
+    width: 95%;
+  } /*Alert Styling*/
+
+  & .empty-error {
+    position: absolute;
+    font-size: 1rem;
+  } /*Empty Alert Styling*/
+
+  & .settings-button {
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 1rem;
+    border: 1px solid white;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0px 5px 10px;
+    height: 50px;
+    width: 150px;
+  } /* Submit Button Styling*/
+
+  & .btn {
+    background-color: #005b96 !important;
+  }
+
+  & .btn:hover {
+    background-color: #243b79 !important;
+  }
+
+  & .Toastify__toast {
+    min-height: 50px;
+    max-height: 500px;
+    font-family: "Didact Gothic", sans-serif;
+    font-size: medium;
+  }
+
+  @media only screen and (max-width: 740px) {
+    .settings-button {
+      height: 40px;
+      width: 100px;
+    }
+  }
+}

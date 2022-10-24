@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+.header-component {
+  & .header {
+    background-color: #005b96;
+    position: fixed !important;
+    top: 0px;
+    width: 100%;
+    left: 0;
+    z-index: 2;
+    overflow: hidden;
+  }
+
+  & .navbar {
+    width: 100%;
+  }
+
+  & .logo {
+    width: 212;
+    height: 40;
+    padding-left: 5px;
+    padding-bottom: 10px;
+  }
+
+  & .header-right {
+    float: right;
+    margin-left: auto;
+    margin-top: 2vh;
+    margin-right: 0;
+    font-size: 24px;
+    color: #ffffff;
+    font-family: "Didact Gothic", sans-serif;
+  }
+
+  @media only screen and (max-width: 670px) {
+    .logo {
+      margin-left: 10vw;
+    }
+  }
+
+  @media only screen and (min-height: 360px) and (max-height: 540px) {
+    .logo {
+      margin-left: 5vw;
+    }
+  }
+
+  @media only screen and (min-width: 800px) {
+    .logo {
+      margin-left: 0vw;
+    }
+  }
+}

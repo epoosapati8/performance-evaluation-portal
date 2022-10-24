@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+
+.self-assessment-page {
+  & .form-container {
+    height: 100%;
+    padding-left: 2vw;
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+  } /*Form container adjustment*/
+
+  & .heading-container {
+    height: 100%;
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: lighter;
+  } /*Heading and dropdown container adjustment*/
+
+  & .form-group-self {
+    margin-top: 3vh;
+    font-size: 1.2rem;
+  } /*Question and textbox adjustment*/
+
+  & .form-control-self {
+    margin-top: 1vh;
+    min-height: 50px;
+    height: auto;
+  } /*Textbox adjustment*/
+
+  & .required {
+    display: inline;
+    color: #d00;
+    font-size: 1.7rem;
+  } /*Asterisk sign styling*/
+
+  & .not-applicable {
+    float: right;
+    margin-right: 2vw;
+    font-size: 0.9rem;
+  } /*If any field is not applicable line adjustment*/
+
+  & .heading {
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: lighter;
+    margin-top: 13vh;
+    margin-right: 20vw;
+    display: inline-block;
+  } /*Heading styling*/
+
+  & .main {
+    max-width: 80vw;
+    margin-left: 10vw;
+  } /*Form container adjustment*/
+
+  & .self-assessment-heading {
+    margin-left: 9.5vw;
+    max-width: 80vw;
+    text-align: end;
+  } /*Heading container adjustment*/
+
+  & .project {
+    border: 1px solid white;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: 0px 5px 10px;
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    display: contents;
+  } /* Project Dropdown Styling*/
+
+  & .btn {
+    background-color: #005b96;
+  }
+
+  & .dropdown-menu {
+    min-width: 0rem !important;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+
+  & .dropdown-toggle {
+    width: 83px;
+    overflow-x: hidden;
+  }
+
+  & .project:focus {
+    background-color: #005b96;
+    outline: none;
+  } /*Dropdown Button Styling*/
+
+  & .submit-button {
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 1rem;
+    background-color: #005b96;
+    border: 1px solid white;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0px 5px 10px;
+    margin-left: 10vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    height: 50px;
+    width: 150px;
+
+    &:hover {
+      background-color: #243b79;
+    }
+
+    &:focus {
+      background-color: #005b96;
+      outline: none;
+    }
+  }
+
+  & .valid-input-error {
+    position: absolute;
+    font-size: 1rem;
+  } /* Input Validation Alert Styling*/
+
+  & .Toastify__toast {
+    min-height: 50px;
+    max-height: 500px;
+    font-family: "Didact Gothic", sans-serif;
+    font-size: medium;
+  }
+
+  @media only screen and (min-width: 410px) and (max-width: 750px) {
+    .main {
+      margin-left: 0% !important;
+      max-width: 100%;
+    }
+
+    .self-assessment-heading {
+      margin-top: 10vh;
+      margin-left: 0%;
+      max-width: 100%;
+    }
+
+    .heading {
+      text-align: center;
+    }
+
+    .submit-button {
+      margin-left: 0vw;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .main {
+      margin-left: 0% !important;
+      max-width: 100%;
+    }
+
+    .submit-button {
+      height: 40px;
+      width: 100px;
+      margin-left: 0vw;
+    }
+
+    .self-assessment-heading {
+      margin-top: 10vh;
+      margin-left: 0%;
+      max-width: 100%;
+    }
+
+    .heading {
+      margin-right: 0%;
+      text-align: center;
+    }
+  }
+
+  @media only screen and (min-width: 480px) and (max-width: 600px) {
+    .self-assessment-heading {
+      margin-top: 0vh;
+    }
+  }
+}

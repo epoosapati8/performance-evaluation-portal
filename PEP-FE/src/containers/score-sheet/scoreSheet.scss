@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+
+.score-sheet-page {
+  & .sheet-container {
+    height: 100%;
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin-top: 2.5vh;
+  }
+
+  & .form-group-scores,
+  & .form-group-duration {
+    font-size: 1.2rem;
+  }
+
+  & .form-control-scores,
+  & .form-control-duration {
+    margin-top: 1vh;
+  }
+
+  & .required {
+    display: inline;
+    color: #d00;
+    font-size: 1.7rem;
+  } /*Asterisk sign styling*/
+
+  & .form-group-feedback {
+    margin-top: 7vh;
+    margin-left: 1.8vw;
+    margin-right: 1.4vw;
+    font-size: 1.2rem;
+  }
+
+  & .form-control-feedback {
+    margin-top: 2vh;
+  }
+
+  & .form-group-duration {
+    margin-top: 3vh;
+    margin-left: 1vw;
+    margin-right: 1.5vw;
+    font-size: 1.2rem;
+  }
+
+  & .btn {
+    background-color: #005b96;
+  }
+
+  & .submit-button {
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 1rem;
+    background-color: #005b96;
+    border: 1px solid white;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0px 5px 10px;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    height: 50px;
+    width: 150px;
+
+    &:hover {
+      background-color: #243b79;
+    }
+
+    &:focus {
+      background-color: #005b96;
+      outline: none;
+    }
+  }
+
+  & .Toastify__toast {
+    min-height: 50px;
+    max-height: 500px;
+    font-family: "Didact Gothic", sans-serif;
+    font-size: medium;
+  }
+
+  @media only screen and (min-height: 800px) {
+    .sheet-container {
+      margin-top: 5vh;
+    }
+  }
+
+  @media only screen and (min-width: 680px) {
+    .form-label-class {
+      margin-top: 4vh;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    .form-group-feedback,
+    .form-group-duration {
+      margin-left: 2.5vw;
+      margin-right: 2.8vw;
+    }
+  }
+}

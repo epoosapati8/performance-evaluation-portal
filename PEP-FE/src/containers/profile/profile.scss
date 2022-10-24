@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+.profile-page {
+  & .profile-container {
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 1.5rem;
+    font-weight: regular;
+    height: 100%;
+    padding-left: 15vw;
+  }
+
+  & .table-user-information {
+    font-size: 1.2rem;
+  }
+
+  & .profile-heading {
+    margin-top: 20vh;
+    margin-bottom: 6vh;
+    text-align: center;
+  }
+
+  @media only screen and (min-width: 600px) and (max-width: 740px) {
+    .panel-heading {
+      text-align: -webkit-center;
+    }
+  }
+
+  @media only screen and (max-width: 540px) {
+    .profile-container {
+      padding-left: 0% !important;
+    }
+  }
+}

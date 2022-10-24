@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+
+.dashboard {
+  & .main-container {
+    height: 100%;
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+
+  & .dashboard-column {
+    margin-left: 25vw;
+  }
+
+  & .card-button {
+    padding: 2vh;
+  }
+
+  & .card {
+    box-shadow: 8px 8px 10px grey;
+    width: 25vw;
+  }
+
+  & .button {
+    width: 100%;
+    background-color: #005b96 !important;
+    color: #ffffff !important;
+    font-size: 1.2rem;
+  }
+
+  & .dashboard-row {
+    margin-top: 30vh;
+  }
+
+  @media only screen and (min-width: 421px) and (max-width: 760px) {
+    .dashboard-column {
+      margin-left: 12vw !important;
+    }
+
+    .main-column {
+      padding-bottom: 5vh !important;
+    }
+
+    .card {
+      box-shadow: 8px 8px 10px grey;
+      width: 45vh;
+    }
+  }
+
+  @media only screen and (min-width: 480px) and (max-width: 600px) {
+    .dashboard-row {
+      margin-top: 15vh;
+    }
+  }
+
+  @media only screen and (max-width: 420px) {
+    .card {
+      box-shadow: 8px 8px 10px grey;
+      width: 60vw;
+    }
+
+    .dashboard-column {
+      margin-left: 20vw !important;
+      margin-top: 20vh !important;
+    }
+
+    .dashboard-row {
+      margin-top: 5vh !important;
+    }
+
+    .main-column {
+      padding-bottom: 5vh !important;
+    }
+
+    .button {
+      width: 100%;
+      background-color: #005b96 !important;
+      color: #ffffff !important;
+      font-size: 1rem;
+    }
+  }
+
+  @media only screen and (max-height: 500px) {
+    .card {
+      box-shadow: 8px 8px 10px grey;
+      width: 45vw;
+    }
+
+    .dashboard-row {
+      justify-content: center !important;
+    }
+
+    .button {
+      width: 100%;
+      background-color: #005b96 !important;
+      color: #ffffff !important;
+      font-size: 1.2rem;
+    }
+
+    .main-column {
+      padding-bottom: 5vh !important;
+    }
+  }
+}

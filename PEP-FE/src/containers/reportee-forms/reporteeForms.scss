@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+
+.reportee-forms-page {
+  & .reportee-form-container {
+    height: 100%;
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 24px;
+    margin-top: 13vh;
+    font-weight: lighter;
+  }
+
+  .disclaimer {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  & .score-sheet-heading {
+    text-align: center;
+  }
+
+  & .self-assessment-heading {
+    text-align: center;
+  }
+
+  & .reportee-name {
+    font-size: 1rem;
+    text-align: end;
+    margin-bottom: 2vh;
+  }
+
+  & .label-primary {
+    background-color: #eceeeb;
+    border-radius: 0.25em;
+    height: auto;
+    padding: 0.5vh 1vh 1vh 1vh;
+  }
+
+  & .reportee-form {
+    margin-left: 15vw;
+  }
+
+  @media only screen and (max-width: 760px) {
+    .reportee-form-container {
+      margin-top: 20vh;
+    }
+
+    .reportee-form {
+      margin-left: 0vw;
+    }
+  }
+
+  @media only screen and (max-height: 500px) {
+    .reportee-name-column {
+      margin-top: 5vh;
+      padding-right: 0%;
+    }
+  }
+
+  @media only screen and (min-width: 760px) and (max-width: 960px) {
+    .reportee-form {
+      margin-left: 20vw;
+    }
+  }
+}

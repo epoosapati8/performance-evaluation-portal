@@ -1,0 +1,28 @@
+.forbidden-page {
+  & .page-container {
+    margin: auto;
+    height: 100%;
+  }
+  & .image-container {
+    position: relative;
+  }
+  & .image404 {
+    left: 1vw;
+    height: auto;
+    max-width: 100%;
+    position: relative;
+  }
+
+  & .message {
+    text-align: center;
+    font-size: 1.6rem;
+    position: absolute;
+    left: 14vw;
+    top: 88vh;
+    width: 75vw;
+    font-family: "Didact Gothic", sans-serif;
+  }
+  & .custom-p {
+    margin-bottom: 0%;
+  }
+}

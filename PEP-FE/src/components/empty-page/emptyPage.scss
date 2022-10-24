@@ -1,0 +1,101 @@
+.no-data-page {
+  & .image {
+    width: 15vw;
+  }
+
+  & .image-column {
+    justify-content: center;
+    top: 38vh;
+    padding-left: 1vw;
+  }
+
+  & .message {
+    text-align: center;
+    font-size: 1.4rem;
+    top: 40vh;
+    font-family: "Didact Gothic", sans-serif;
+  }
+
+  & .custom-p {
+    margin-bottom: 0%;
+    cursor: pointer;
+    color: #005b96;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @media only screen and (max-width: 420px) {
+    .image {
+      width: 30vw;
+      margin-left: 26vw;
+    }
+
+    .image-column {
+      justify-content: center;
+      left: 0vw;
+      top: 20vh;
+      padding-left: 5vw;
+    }
+
+    .message {
+      left: 0vw;
+      top: 20vh;
+      font-size: 1.2rem;
+    }
+  }
+
+  @media only screen and (max-height: 460px) {
+    .image {
+      width: 20vw;
+      margin-left: 35vw;
+    }
+
+    .image-column {
+      left: 0vw;
+      top: 20vh;
+      padding-left: 2vw;
+      margin-top: 5vh;
+    }
+
+    .message {
+      left: 0vw;
+      top: 20vh;
+    }
+  }
+
+  @media only screen and (min-width: 800px) and (max-width: 1000px) {
+    .image {
+      width: 20vw;
+      margin-left: 0vw;
+    }
+
+    .image-column {
+      left: 0vw;
+      top: 20vh;
+      padding-left: 0vw;
+    }
+
+    .message {
+      left: 2vw;
+      top: 20vh;
+    }
+  }
+
+  @media only screen and (min-width: 480px) and (max-width: 750px) {
+    .image {
+      width: 20vw;
+      margin-left: 40vw;
+    }
+
+    .image-column {
+      left: 0vw;
+      top: 20vh;
+    }
+
+    .message {
+      left: 2vw;
+      top: 20vh;
+    }
+  }
+}
